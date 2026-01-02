@@ -1,0 +1,114 @@
+{
+  "tldr": {
+
+  },
+  "banner": [
+        {
+      "charName": "Tyr",
+      "role": "DPS",
+      "dmgType": "Physical",
+      "element": "wind",
+      "costumeName": "Innocent Bunny",
+      "imgName": "innocent_bunny",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ],
+        [ "4", "longer Buff Duration" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+        {
+      "charName": "Darian",
+      "role": "DPS",
+      "dmgType": "Physical",
+      "element": "water",
+      "costumeName": "Bittersweet Bunny",
+      "imgName": "bittersweet_bunny",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ],
+        [ "4", "longer Buff Duration" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+    {
+      "charName": "Loen",
+      "role": "DPS",
+      "dmgType": "Magic",
+      "element": "fire",
+      "costumeName": "Celebrity Bunny",
+      "imgName": "celebrity_bunny",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ],
+        [ "2", "more DMG" ],
+        [ "3", "more more DMG" ],
+        [ "4", "more more more DMG" ],
+        [ "5", "maximum Explosion!!1!" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+
+    {
+      "charName": "Celia",
+      "role": "Chainer",
+      "dmgType": "Magic",
+      "element": "dark",
+      "costumeName": "Masquerade Bunny",
+      "imgName": "masquerade_bunny",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ],
+        [ "4", "longer Buff Duration" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+    {
+      "charName": "Levia",
+      "role": "DPS",
+      "dmgType": "Magic",
+      "element": "fire",
+      "costumeName": "Overheat",
+      "imgName": "overheat",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+        {
+      "charName": "Zenith",
+      "role": "Chainer + DMG Amp",
+      "dmgType": "Physical",
+      "element": "wind",
+      "costumeName": "Robin Hood",
+      "imgName": "robin_hood",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "3", "-1 SP and with SP Pod ==> 0 SP Skill" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    },
+    {
+      "charName": "Gray",
+      "role": "DPS",
+      "dmgType": "Physical",
+      "element": "wind",
+      "costumeName": "Vanguard",
+      "imgName": "vanguard",
+      "startDate": "2025-12-31",
+      "endDate": "2026-01-14T23:50:00",
+      "breakpoints": [
+        [ "1", "-1 SP" ],
+        [ "4", "longer Buff Duration" ]
+      ],
+      "description": "Because Meta Chainer!!!1! Get her! You fool?!"
+    }
+  ]
+}

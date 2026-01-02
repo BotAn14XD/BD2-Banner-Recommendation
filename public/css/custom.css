@@ -1,0 +1,9 @@
+.costumeSize {
+  min-height: 200px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+#main-container:last-child {
+  padding-bottom: 0.5rem;
+}
