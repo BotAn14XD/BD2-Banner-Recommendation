@@ -182,7 +182,7 @@ function addListElements( list, dataArray ) {
   if ( dataArray === undefined || dataArray.length === 0 ) {
     const listElement = document.createElement( 'li' );
     listElement.classList.add( 'list-group-item' );
-    listElement.textContent = "Nothing noteworthy!";
+    listElement.textContent = 'Nothing noteworthy!';
     list.appendChild( listElement );
     return;
   }
@@ -209,7 +209,7 @@ function updateBannerTimeLeft() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function init() {
-  const res = await fetch( "./public/json/data.json" );
+  const res = await fetch( './public/json/data.json' );
   const jsonData = await res.json();
 
   await createBannerCards( jsonData[ 'banner' ] );
