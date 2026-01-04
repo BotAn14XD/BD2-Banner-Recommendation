@@ -10,8 +10,8 @@ function createTldr( dataArray ) {
   for( const [ i , [ costumeName, dupesArray ] ] of dataArray.entries() ) {
     container.append( costumeName, ' [' );
 
-    for( const i = 0; i < dupesArray.length; i++ ) {
-      const dupe = dupesArray[ i ];
+    for( let f = 0; f < dupesArray.length; f++ ) {
+      const dupe = dupesArray[ f ];
       const dupeImg = document.createElement( 'img' );
       dupeImg.src = `./public/images/${ dupe }.png`;
       dupeImg.classList.add( 'px-1' );
@@ -22,7 +22,7 @@ function createTldr( dataArray ) {
       dupeImg.height = 22;
       container.append( dupeImg );
 
-      if ( dupesArray.length > 1 && i < dupesArray.length - 1  ) {
+      if ( dupesArray.length > 1 && f < dupesArray.length - 1  ) {
         container.append( '|' );
       }
     }
