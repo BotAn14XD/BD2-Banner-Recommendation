@@ -4,6 +4,41 @@ const timeLeftArray = [];
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function createTldr( dataArray ) {
+  const container = document.getElementById( 'tldr' );
+  const arrow = String.fromCharCode( '10230' );
+  for( const [ i , [ costumeName, dupesArray ] ] of dataArray.entries() ) {
+    container.append( costumeName, ' [' );
+
+    for( const i = 0; i < dupesArray.length; i++ ) {
+      const dupe = dupesArray[ i ];
+      const dupeImg = document.createElement( 'img' );
+      dupeImg.src = `./public/images/${ dupe }.png`;
+      dupeImg.classList.add( 'px-1' );
+      dupeImg.alt = `+${ dupe }`;
+      dupeImg.title = dupeImg.alt;
+      dupeImg.loading = 'lazy';
+      dupeImg.width = 33;
+      dupeImg.height = 22;
+      container.append( dupeImg );
+
+      if ( dupesArray.length > 1 && i < dupesArray.length - 1  ) {
+        container.append( '|' );
+      }
+    }
+
+    container.append( '] ' );
+
+    if ( i < dataArray.length - 1 ) {
+      container.append( arrow, ' ' );
+    }
+  }
+  container.removeAttribute( 'id' );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 async function createBannerCards( bannerData ) {
   /** @type { HTMLDivElement } */
   const container = document.getElementById( 'main-container' );
@@ -211,6 +246,8 @@ function updateBannerTimeLeft() {
 async function init() {
   const res = await fetch( './public/json/data.json' );
   const jsonData = await res.json();
+
+  createTldr( jsonData[ 'tldr' ] );
 
   await createBannerCards( jsonData[ 'banner' ] );
 

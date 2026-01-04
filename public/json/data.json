@@ -1,7 +1,15 @@
 {
-  "tldr": {
-
-  },
+  "tldr": [
+    [ "Masquerade Bunny Celia", [ 4 ] ],
+    [ "Celebrity Bunny Loen", [ 1 ] ],
+    [ "Bittersweet Bunny Darian", [ 2 ] ],
+    [ "Celebrity Bunny Loen", [ 5 ] ],
+    [ "Robin Hood Zenith", [ 3 ] ],
+    [ "Innocent Bunny Tyr", [ 0 ] ],
+    [ "Bittersweet Bunny Darian", [ 5 ] ],
+    [ "Innocent Bunny Tyr", [ 2, 4 ] ],
+    [ "Robin Hood Zenith", [ 5 ] ]
+  ],
   "banner": [
         {
       "charName": "Tyr",
