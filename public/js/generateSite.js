@@ -6,7 +6,7 @@ const timeLeftArray = [];
 
 async function createBannerCards( bannerData ) {
   /** @type { HTMLDivElement } */
-  const container = document.getElementById( "main-container" );
+  const container = document.getElementById( 'main-container' );
 
   /** @type { HTMLTemplateElement } */
   const template = document.getElementById( 'charBannerCard' );
@@ -35,65 +35,61 @@ async function createBannerCards( bannerData ) {
 
     //Basic Info
     /** @type { HTMLImageElement } */
-    const costumeImg = bannerCard.querySelector(".costumeImg");
+    const costumeImg = bannerCard.querySelector( '.costumeImg' );
     costumeImg.src = `./public/images/costumes/${ bannerChar.imgName }.png`;
     costumeImg.alt = bannerChar.imgName;
     costumeImg.title = bannerChar.costumeName;
-    costumeImg.classList.remove( "costumeImg" );
+    costumeImg.classList.remove( 'costumeImg' );
 
-    const cardTitle = bannerCard.querySelector(".bannerName");
+    const cardTitle = bannerCard.querySelector( '.bannerName' );
     const title = document.createElement( 'h1' );
     title.textContent = `${ bannerChar.costumeName } ${ bannerChar.charName }`;
     cardTitle.appendChild( title );
     cardTitle.classList.remove( 'bannerName' );
 
-    const roleLine = bannerCard.querySelector(".role")
+    const roleLine = bannerCard.querySelector( '.role' )
     const roleText = document.createTextNode( bannerChar.role );
     roleLine.appendChild( roleText );
     roleLine.classList.remove( 'role' );
 
-    const propertyImg = bannerCard.querySelector(".property");
+    const propertyImg = bannerCard.querySelector( '.property' );
     propertyImg.src = `./public/images/${ bannerChar.element }.png`;
     propertyImg.alt = bannerChar.element;
     propertyImg.title = bannerChar.element;
     propertyImg.classList.remove( 'property' );
 
-    const dmgTypeLine = bannerCard.querySelector(".dmgType")
+    const dmgTypeLine = bannerCard.querySelector( '.dmgType' );
     const dmgTypeText = document.createTextNode( bannerChar.dmgType );
     dmgTypeLine.appendChild( dmgTypeText );
     dmgTypeLine.classList.remove( 'dmgType' );
 
     const startDate = new Date( Date.parse( bannerChar.startDate ) );
     const endDate = new Date( Date.parse( bannerChar.endDate ) );
-    const periodeLine = bannerCard.querySelector( ".bannerPeriode" );
+    const periodeLine = bannerCard.querySelector( '.bannerPeriode' );
     const periodeText = document.createTextNode( getBannerPeriodeLocalTimeString( startDate, endDate ) );
     periodeLine.appendChild( periodeText );
     periodeLine.classList.remove( 'bannerPeriode' );
 
-    const timeLeftLine = bannerCard.querySelector( ".bannerTimeLeft" );
+    const timeLeftLine = bannerCard.querySelector( '.bannerTimeLeft' );
     const timeLeftContainer = getTimeLeftSpan( endDate );
-    const timeLeftStartText = document.createTextNode( 'Banner ends in ' );
-    const timeLeftEndText = document.createTextNode( ' !' );
-    timeLeftLine.appendChild( timeLeftStartText );
-    timeLeftLine.appendChild( timeLeftContainer );
-    timeLeftLine.appendChild( timeLeftEndText );
+    timeLeftLine.append( 'Banner ends in ', timeLeftContainer, ' !' );
     timeLeftLine.classList.remove( 'bannerTimeLeft' );
     timeLeftArray.push( [ endDate, timeLeftContainer ] );
 
-    const breakpoints = bannerCard.querySelector( ".breakpoints" )
-    breakpoints.innerHTML = getBreakpoints( bannerChar.breakpoints );
-    breakpoints.classList.remove( 'breakpoints' );
+    const breakpointsContainer = bannerCard.querySelector( '.breakpoints' );
+    createBreakpoints( breakpointsContainer, bannerChar.breakpoints );
+    breakpointsContainer.classList.remove( 'breakpoints' );
 
-    const pullReason = bannerCard.querySelector( ".pullReason" )
+    const pullReason = bannerCard.querySelector( '.pullReason' );
     pullReason.innerHTML = bannerChar.pullReason;
     pullReason.classList.remove( 'pullReason' );
 
     //Pros and Cons
-    const pros = bannerCard.querySelector( ".pros" );
+    const pros = bannerCard.querySelector( '.pros' );
     addListElements( pros, bannerChar.pros );
     pros.classList.remove( 'pros' );
 
-    const cons = bannerCard.querySelector( ".cons" );
+    const cons = bannerCard.querySelector( '.cons' );
     addListElements( cons, bannerChar.cons );
     cons.classList.remove( 'cons' );
 
@@ -117,9 +113,9 @@ function getBannerPeriodeLocalTimeString( start, end ) {
 function getTimeLeftSpan( end ) {
   const timeLeft = calcTimeLeftOnBanner( end );
 
-  let textColor = "text-warning";
+  let textColor = 'text-warning';
   if ( timeLeft[0] < 4 ) {
-    textColor = "text-danger"
+    textColor = 'text-danger'
   }
 
   const timeLeftContainer = document.createElement( 'span' );
@@ -160,18 +156,27 @@ function createTimeLeftString( [ days, hours, minutes ] ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function getBreakpoints( breakpoints ) {
-  let breakpointString = "";
-
+function createBreakpoints( container, breakpoints ) {
   for( const [dupe, comment] of breakpoints ) {
-    breakpointString += `<li class="list-group-item"><img class="pe-2" src="./public/images/${ dupe }.png" 
-      loading="lazy" title="Needed Copies: ${ dupe + 1 }" alt="${ dupe + 1 }_dupes.png"
-      width="40px" height="32px"> ${ comment }</li>`;
+    const listElement = document.createElement( 'li' );
+    listElement.classList.add( 'list-group-item' );
+    const dupeImg = document.createElement( 'img' );
+    dupeImg.src = `./public/images/${ dupe }.png`;
+    dupeImg.alt = `${ dupe + 1 }_dupes.png`;
+    dupeImg.title = `Needed Copies: ${ dupe + 1 }`;
+    dupeImg.classList.add( 'pe-2' );
+    dupeImg.loading = 'lazy';
+    dupeImg.width = 48;
+    dupeImg.height = 32;
+    const breakpointComment = document.createElement( 'span' );
+    breakpointComment.innerHTML = comment;
+    listElement.append( dupeImg, breakpointComment );
+    container.appendChild( listElement );
   }
-
-  return breakpointString;
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function addListElements( list, dataArray ) {
   if ( dataArray === undefined || dataArray.length === 0 ) {
@@ -189,6 +194,8 @@ function addListElements( list, dataArray ) {
     list.appendChild( listElement );
   }
 }
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function updateBannerTimeLeft() {
