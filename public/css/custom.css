@@ -6,3 +6,16 @@
 #main-container:last-child {
   padding-bottom: 0.5rem;
 }
+
+.nav-link {
+  color: var(--text-color)
+}
+.nav-link:hover {
+  color: var(--bs-secondary-color)
+}
+
+@media (max-width: 768px) {
+  .borderless {
+    border-width: 0 !important;
+  }
+}
