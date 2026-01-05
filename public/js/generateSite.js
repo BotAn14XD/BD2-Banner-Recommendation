@@ -15,8 +15,9 @@ function createTldr( dataArray ) {
       const dupeImg = document.createElement( 'img' );
       dupeImg.src = `./public/images/${ dupe }.png`;
       dupeImg.classList.add( 'px-1' );
-      dupeImg.alt = `+${ dupe }`;
-      dupeImg.title = dupeImg.alt;
+      const dupeAmount = Number( dupe ) + 1;
+      dupeImg.alt = `${ dupeAmount }_dupes.png`;
+      dupeImg.title = `Needed Copies: ${ dupeAmount }`;
       dupeImg.loading = 'lazy';
       dupeImg.width = 33;
       dupeImg.height = 22;
@@ -39,7 +40,7 @@ function createTldr( dataArray ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-async function createBannerCards( bannerData ) {
+async function createBannerCards( bannerData, characterData ) {
   /** @type { HTMLDivElement } */
   const container = document.getElementById( 'main-container' );
 
@@ -76,9 +77,11 @@ async function createBannerCards( bannerData ) {
     costumeImg.title = bannerChar.costumeName;
     costumeImg.classList.remove( 'costumeImg' );
 
+    const charInfo = characterData[ bannerChar.char ];
+
     const cardTitle = bannerCard.querySelector( '.bannerName' );
     const title = document.createElement( 'h1' );
-    title.textContent = `${ bannerChar.costumeName } ${ bannerChar.charName }`;
+    title.textContent = `${ bannerChar.costumeName } ${ charInfo.name }`;
     cardTitle.appendChild( title );
     cardTitle.classList.remove( 'bannerName' );
 
@@ -88,13 +91,13 @@ async function createBannerCards( bannerData ) {
     roleLine.classList.remove( 'role' );
 
     const propertyImg = bannerCard.querySelector( '.property' );
-    propertyImg.src = `./public/images/${ bannerChar.element }.png`;
-    propertyImg.alt = bannerChar.element;
-    propertyImg.title = bannerChar.element;
+    propertyImg.src = `./public/images/${ charInfo.element }.png`;
+    propertyImg.alt = charInfo.element;
+    propertyImg.title = propertyImg.alt;
     propertyImg.classList.remove( 'property' );
 
     const dmgTypeLine = bannerCard.querySelector( '.dmgType' );
-    const dmgTypeText = document.createTextNode( bannerChar.dmgType );
+    const dmgTypeText = document.createTextNode( charInfo.dmgType );
     dmgTypeLine.appendChild( dmgTypeText );
     dmgTypeLine.classList.remove( 'dmgType' );
 
@@ -197,8 +200,9 @@ function createBreakpoints( container, breakpoints ) {
     listElement.classList.add( 'list-group-item' );
     const dupeImg = document.createElement( 'img' );
     dupeImg.src = `./public/images/${ dupe }.png`;
-    dupeImg.alt = `${ dupe + 1 }_dupes.png`;
-    dupeImg.title = `Needed Copies: ${ dupe + 1 }`;
+    const dupeAmount = Number( dupe ) + 1;
+    dupeImg.alt = `${ dupeAmount }_dupes.png`;
+    dupeImg.title = `Needed Copies: ${ dupeAmount }`;
     dupeImg.classList.add( 'pe-2' );
     dupeImg.loading = 'lazy';
     dupeImg.width = 48;
@@ -249,7 +253,7 @@ async function init() {
 
   createTldr( jsonData[ 'tldr' ] );
 
-  await createBannerCards( jsonData[ 'banner' ] );
+  await createBannerCards( jsonData[ 'banner' ], jsonData[ 'characterData' ] );
 
   const now = new Date();
   const msUntilNextMin = ( 60 - now.getSeconds() ) * 1000 - now.getMilliseconds();

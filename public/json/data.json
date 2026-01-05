@@ -11,12 +11,10 @@
     [ "Robin Hood Zenith", [ 5 ] ]
   ],
   "banner": [
-        {
-      "charName": "Tyr",
-      "role": "DPS",
-      "dmgType": "Physical",
-      "element": "wind",
+    {
+      "char": "tyr",
       "costumeName": "Innocent Bunny",
+      "role": "DPS",
       "imgName": "innocent_bunny",
       "startDate": "2025-12-31",
       "endDate": "2026-01-14T23:50:00Z",
@@ -26,12 +24,10 @@
       ],
       "pullReason": "<b>Depends.</b> She is good if you have Starlight Guardian Tyr, otherwise her usage is very limited. Consider pulling low dupe count in order to save for onsen banners."
     },
-        {
-      "charName": "Darian",
-      "role": "DPS",
-      "dmgType": "Physical",
-      "element": "water",
+    {
+      "char": "darian",
       "costumeName": "Bittersweet Bunny",
+      "role": "DPS",
       "imgName": "bittersweet_bunny",
       "startDate": "2025-12-31",
       "endDate": "2026-01-14T23:50:00Z",
@@ -42,11 +38,9 @@
       "pullReason": "<b>Yes</b>, although her priority is lower than, for example, Celia and Loen. Her conditional skill greatly limits her usage."
     },
     {
-      "charName": "Loen",
-      "role": "DPS",
-      "dmgType": "Magic",
-      "element": "fire",
+      "char": "loen",
       "costumeName": "Celebrity Bunny",
+      "role": "DPS",
       "imgName": "celebrity_bunny",
       "startDate": "2025-12-31",
       "endDate": "2026-01-14T23:50:00Z",
@@ -55,13 +49,10 @@
       ],
       "pullReason": "<b>Yes</b>. She is undeniably one of the strongest DPS for a general content, has good scaling versus a lot of enemies and is limited."
     },
-
     {
-      "charName": "Celia",
-      "role": "Chainer",
-      "dmgType": "Magic",
-      "element": "dark",
+      "char": "celia",
       "costumeName": "Masquerade Bunny",
+      "role": "Chainer",
       "imgName": "masquerade_bunny",
       "startDate": "2025-12-31",
       "endDate": "2026-01-07T23:59:59Z",
@@ -83,11 +74,9 @@
       ]
     },
     {
-      "charName": "Levia",
-      "role": "DPS",
-      "dmgType": "Magic",
-      "element": "fire",
+      "char": "levia",
       "costumeName": "Overheat",
+      "role": "DPS",
       "imgName": "overheat",
       "startDate": "2025-12-31",
       "endDate": "2026-01-07T23:59:59Z",
@@ -96,12 +85,10 @@
       ],
       "pullReason": "<b>Optional</b>. She was buffed recently but that does not make her more important compared to Tyr or other banners."
     },
-        {
-      "charName": "Zenith",
-      "role": "Chainer, Amplifier",
-      "dmgType": "Physical",
-      "element": "wind",
+    {
+      "char": "zenith",
       "costumeName": "Robin Hood",
+      "role": "Chainer, Amplifier",
       "imgName": "robin_hood",
       "startDate": "2025-12-31",
       "endDate": "2026-01-14T23:50:00Z",
@@ -111,11 +98,9 @@
       "pullReason": "<b>Yes</b>, She is important support for Fiend Hunter / Guild Raid. Her +3 dupe gives 0 SP skill activation each turn."
     },
     {
-      "charName": "Gray",
-      "role": "DPS",
-      "dmgType": "Physical",
-      "element": "wind",
+      "char": "gray",
       "costumeName": "Vanguard",
+      "role": "DPS",
       "imgName": "vanguard",
       "startDate": "2025-12-31",
       "endDate": "2026-01-14T23:50:00Z",
@@ -124,5 +109,282 @@
       ],
       "pullReason": "<b>No</b>, unless you are at the end game. He is niche DoT DPS who scales based on enemy Magic ATK, making him very niche."
     }
-  ]
+  ],
+  "characterData": {
+    "alec": {
+      "name": "Alec",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "anastasia": {
+      "name": "Anastasia",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "angelica": {
+      "name": "Angelica",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "blade": {
+      "name": "Blade",
+      "element": "dark",
+      "dmgType": "Physical"
+    },
+    "celia": {
+      "name": "Celia",
+      "element": "dark",
+      "dmgType": "Magic"
+    },
+    "dalvi": {
+      "name": "Dalvi",
+      "element": "wind",
+      "dmgType": "Magic"
+    },
+    "darian": {
+      "name": "Darian",
+      "element": "water",
+      "dmgType": "Physical"
+    },
+    "diana": {
+      "name": "Diana",
+      "element": "wind",
+      "dmgType": "Magic"
+    },
+    "eclipse": {
+      "name": "Eclipse",
+      "element": "dark",
+      "dmgType": "Magic"
+    },
+    "eleaneer": {
+      "name": "Eleaneer",
+      "element": "dark",
+      "dmgType": "Physical"
+    },
+    "elise": {
+      "name": "Elise",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "eris": {
+      "name": "Eris",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "glacia": {
+      "name": "Glacia",
+      "element": "water",
+      "dmgType": "Magic"
+    },
+    "goblin_Slayer": {
+      "name": "Goblin Slayer",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "granhildr": {
+      "name": "Granhildr",
+      "element": "light",
+      "dmgType": "Physical"
+    },
+    "gray": {
+      "name": "Gray",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "helena": {
+      "name": "Helena",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "high_Elf_Archer": {
+      "name": "High Elf Archer",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "hikage": {
+      "name": "Hikage",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "justia": {
+      "name": "Justia",
+      "element": "light",
+      "dmgType": "Physical"
+    },
+    "lathel": {
+      "name": "Lathel",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "lecliss": {
+      "name": "Lecliss",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "levia": {
+      "name": "Levia",
+      "element": "fire",
+      "dmgType": "Magic"
+    },
+    "liatris": {
+      "name": "Liatris",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "liberta": {
+      "name": "Liberta",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "loen": {
+      "name": "Loen",
+      "element": "fire",
+      "dmgType": "Magic"
+    },
+    "luvencia": {
+      "name": "Luvencia",
+      "element": "dark",
+      "dmgType": "Physical"
+    },
+    "michaela": {
+      "name": "Michaela",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "morphea": {
+      "name": "Morphea",
+      "element": "water",
+      "dmgType": "Magic"
+    },
+    "nartas": {
+      "name": "Nartas",
+      "element": "dark",
+      "dmgType": "Magic"
+    },
+    "nebris": {
+      "name": "Nebris",
+      "element": "wind",
+      "dmgType": "Physical"
+    }, 
+    "olivier": {
+      "name": "Olivier",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "olstein": {
+      "name": "Olstein",
+      "element": "wind",
+      "dmgType": "Magic"
+    },
+    "priestess": {
+      "name": "Priestess",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "rafina": {
+      "name": "Rafina",
+      "element": "water",
+      "dmgType": "Physical"
+    },
+    "refithea": {
+      "name": "Refithea",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "rou": {
+      "name": "Rou",
+      "element": "dark",
+      "dmgType": "Physical"
+    },
+    "roxy": {
+      "name": "Roxy",
+      "element": "water",
+      "dmgType": "Magic"
+    },
+    "rubia": {
+      "name": "Rubia",
+      "element": "fire",
+      "dmgType": "Physical"
+    },
+    "sacred_Justia": {
+      "name": "Sacred Justia",
+      "element": "light",
+      "dmgType": "Physical"
+    },
+    "scheherazade": {
+      "name": "Scheherazade",
+      "element": "water",
+      "dmgType": "Magic"
+    },
+    "seir": {
+      "name": "Seir",
+      "element": "dark",
+      "dmgType": "Physical"
+    },
+    "sonya": {
+      "name": "Sonya",
+      "element": "dark",
+      "dmgType": "Magic"
+    },
+    "sword_Maiden": {
+      "name": "Sword Maiden",
+      "element": "light",
+      "dmgType": "Magic"
+    },
+    "sylvia": {
+      "name": "Sylvia",
+      "element": "water",
+      "dmgType": "Physical"
+    },
+    "teresse": {
+      "name": "Teresse",
+      "element": "water",
+      "dmgType": "Physical"
+    },
+    "tyr": {
+      "name": "Tyr",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "venaka": {
+      "name": "Venaka",
+      "element": "wind",
+      "dmgType": "Magic"
+    },
+    "ventana": {
+      "name": "Ventana",
+      "element": "light",
+      "dmgType": "Physical"
+    },
+    "wilhelmina": {
+      "name": "Wilhelmina",
+      "element": "water",
+      "dmgType": "Physical"
+    },
+    "yomi": {
+      "name": "Yomi",
+      "element": "wind",
+      "dmgType": "Physical"
+    },
+    "yozakura": {
+      "name": "Yozakura",
+      "element": "wind",
+      "dmgType": "Magic"
+    },
+    "yumi": {
+      "name": "Yumi",
+      "element": "water",
+      "dmgType": "Magic"
+    },
+    "yuri": {
+      "name": "Yuri",
+      "element": "light",
+      "dmgType": "Physical"
+    },
+    "zenith": {
+      "name": "Zenith",
+      "element": "wind",
+      "dmgType": "Physical"
+    }
+  }
 }
