@@ -5,17 +5,18 @@ const timeLeftArray = [];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function createTldr( dataArray ) {
-  const container = document.getElementById( 'tldr' );
+  const container = document.querySelector( '[ data-tldr ]' );
   const arrow = String.fromCharCode( '10230' );
+
   for( const [ i , [ costumeName, dupesArray ] ] of dataArray.entries() ) {
     container.append( costumeName, ' [' );
 
     for( let f = 0; f < dupesArray.length; f++ ) {
-      const dupe = dupesArray[ f ];
+      const dupe = Number( dupesArray[ f ] );
       const dupeImg = document.createElement( 'img' );
       dupeImg.src = `./public/images/${ dupe }.png`;
       dupeImg.classList.add( 'px-1' );
-      const dupeAmount = Number( dupe ) + 1;
+      const dupeAmount = dupe + 1;
       dupeImg.alt = `${ dupeAmount }_dupes.png`;
       dupeImg.title = `Needed Copies: ${ dupeAmount }`;
       dupeImg.loading = 'lazy';
@@ -34,7 +35,7 @@ function createTldr( dataArray ) {
       container.append( arrow, ' ' );
     }
   }
-  container.removeAttribute( 'id' );
+  container.removeAttribute( 'data-tldr' );
 }
 
 
@@ -51,31 +52,31 @@ async function createBannerCards( bannerData, damageAttributes ) {
     const bannerCard = template.content.cloneNode( true );
 
     //Tabs
-    const basicTab = bannerCard.querySelector( '#basicTab' );
+    const basicTab = bannerCard.querySelector( '[ data-basic-tab ]' );
     basicTab.dataset.bsTarget = `#basic_${ bannerChar.imgName }`;
-    basicTab.removeAttribute( 'id' );
+    basicTab.removeAttribute( 'data-basic-tab' );
     const basicTabContent = bannerCard.querySelector( '#basic' );
     basicTabContent.id = `basic_${ bannerChar.imgName }`;
 
-    const pacTab = bannerCard.querySelector( '#pacTab' );
+    const pacTab = bannerCard.querySelector( '[ data-pac-tab ]' );
     pacTab.dataset.bsTarget = `#pac_${ bannerChar.imgName }`;
-    pacTab.removeAttribute( 'id' );
+    pacTab.removeAttribute( 'data-pac-tab' );
     const pacTabContent = bannerCard.querySelector( '#pac' );
     pacTabContent.id = `pac_${ bannerChar.imgName }`;
 
-    const modeTab = bannerCard.querySelector( '#modeTab' );
+    const modeTab = bannerCard.querySelector( '[ data-mode-tab ]' );
     modeTab.dataset.bsTarget = `#mode_${ bannerChar.imgName }`;
-    modeTab.removeAttribute( 'id' );
+    modeTab.removeAttribute( 'data-mode-tab' );
     const modeTabContent = bannerCard.querySelector( '#mode' );
     modeTabContent.id = `mode_${ bannerChar.imgName }`;
 
     //Basic Info
     /** @type { HTMLImageElement } */
-    const costumeImg = bannerCard.querySelector( '.costumeImg' );
+    const costumeImg = bannerCard.querySelector( '[ data-costume-image ]' );
     costumeImg.src = `./public/images/costumes/${ bannerChar.imgName }.png`;
     costumeImg.alt = bannerChar.imgName;
     costumeImg.title = bannerChar.costumeName;
-    costumeImg.classList.remove( 'costumeImg' );
+    costumeImg.removeAttribute( 'data-costume-image' );
 
     const dmgAtt = damageAttributes[ bannerChar.dmgAtt ];
 

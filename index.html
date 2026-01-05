@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Site about Banner Recommendation for the Game: Brown Dust 2">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <link rel="preload" href="./public/json/data.json" as="fetch">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" as="script">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./public/css/custom.css">
   <title>Brown Dust 2 - Banner Recommendation</title>
@@ -23,19 +30,19 @@
     <div id="main-container" class="container-fluid pt-2">
       <div class="row pb-3">
         <div class="col-10 mx-auto">
-            <section class="container-fluid pb-2 border rounded-top">
+          <section class="container-fluid pb-2 border rounded-top">
 
-              <div class="row">
-                <div class="col-2 d-flex justify-content-center mx-0 flex-grow-1">
-                  <h1><u>TLDR</u></h1>
-                </div>
+            <div class="row">
+              <div class="col-2 d-flex justify-content-center mx-0 flex-grow-1">
+                <h1><u>TLDR</u></h1>
               </div>
+            </div>
 
-              <div class="row">
-                <div id="tldr" class="col-12 align-items-center justify-content-center"></div>
-              </div>
+            <div class="row">
+              <div data-tldr class="col-12 align-items-center justify-content-center"></div>
+            </div>
 
-            </section>
+          </section>
         </div>
       </div>
 
@@ -43,9 +50,10 @@
         <section class="row pt-2">
           <div class="col-11 mx-auto bg-body-tertiary rounded">
             <div class="row h-100 py-2">
+
               <div class="col-12 col-md-4 col-xl-2 pe-2 borderless border-end">
                 <div class="w-100 h-100 d-flex justify-content-center">
-                  <img class="costumeSize costumeImg my-auto" loading="lazy">
+                  <img data-costume-image class="costumeSize my-auto" loading="lazy">
                 </div>
               </div>
 
@@ -60,13 +68,13 @@
                     <div class="container-fluid">
                       <ul class="nav nav-underline" role="tablist">
                         <li class="nav-item">
-                          <button class="nav-link active" id="basicTab" data-bs-toggle="tab" data-bs-target="#basic" type="button" role="tab">Basic Info</button>
+                          <button class="nav-link active" data-basic-tab data-bs-toggle="tab" data-bs-target="#basic" type="button" role="tab">Basic Info</button>
                         </li>
                         <li class="nav-item">
-                          <button class="nav-link" id="pacTab" data-bs-toggle="tab" data-bs-target="#pac" type="button" role="tab">Pros & Cons</button>
+                          <button class="nav-link" data-pac-tab data-bs-toggle="tab" data-bs-target="#pac" type="button" role="tab">Pros & Cons</button>
                         </li>
                         <li class="nav-item">
-                          <button class="nav-link" id="modeTab" data-bs-toggle="tab" data-bs-target="#mode" type="button" role="tab">Mode Rating</button>
+                          <button class="nav-link" data-mode-tab data-bs-toggle="tab" data-bs-target="#mode" type="button" role="tab">Mode Rating</button>
                         </li>
                       </ul>
                     </div>
@@ -76,6 +84,7 @@
                 <div class="tab-content d-flex flex-grow-1">
                   <div class="container-fluid tab-pane fade show active" id="basic" role="tabpanel">
                     <div class="row h-100">
+
                       <div class="col-12 col-xl-4 col-xxl-4 pe-0 pt-3 pb-2 py-xl-0 d-flex align-items-center">
                         <div class="w-100">
                           <ul class="list-unstyled date">
@@ -88,6 +97,7 @@
                           </ul>
                         </div>
                       </div>
+
                       <div class="col-12 col-xl-8 col-xxl-4 d-flex align-items-center">
                         <div class="container-fluid">
                           <div class="row pb-3">
@@ -104,6 +114,7 @@
                         </div>
 
                       </div>
+
                       <div class="col-12 col-xl-12 col-xxl-4 pt-3 pt-xxl-0 d-flex align-items-center">
                         <div class="container-fluid">
                           <div class="row pb-3">
@@ -119,12 +130,13 @@
                           </div>
                         </div>
                       </div>
-                    </div>
 
+                    </div>
                   </div>
 
                   <div class="container-fluid tab-pane fade" id="pac" role="tabpanel">
                     <div class="row h-100">
+
                       <div class="col-6 d-flex flex-column border-end border-2">
                         <div class="row pt-2">
                           <h3 class="text-success">Pros</h3>
@@ -148,25 +160,26 @@
                           </div>
                         </div>
 
-        
                       </div>
+
                     </div>
-
-                    
-
                   </div>
 
                   <div class="container-fluid tab-pane fade" id="mode" role="tabpanel">
-                    xsxxsxxsxsxsx
+                    <div class="row h-100">
+                      <div class="col">
+
+                      </div>
+                    </div>
                   </div>
                 </div>
 
               </div>
+
             </div>
           </div>
         </section>
       </template>
-
     </div>
   </main>
 
