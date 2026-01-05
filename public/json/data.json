@@ -19,7 +19,7 @@
       "costumeName": "Innocent Bunny",
       "imgName": "innocent_bunny",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00",
+      "endDate": "2026-01-14T23:50:00Z",
       "breakpoints": [
         [ "2", "Big Damage Increase<br>[1160% &xrarr; 1400%, 8 SP consumed]" ],
         [ "4", "Big Damage Increase<br>[1450% &xrarr; 1690%, 8 SP consumed]" ]
@@ -34,7 +34,7 @@
       "costumeName": "Bittersweet Bunny",
       "imgName": "bittersweet_bunny",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00",
+      "endDate": "2026-01-14T23:50:00Z",
       "breakpoints": [
         [ "1", "-1 SP" ],
         [ "2", "-2 CD" ]
@@ -49,7 +49,7 @@
       "costumeName": "Celebrity Bunny",
       "imgName": "celebrity_bunny",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00",
+      "endDate": "2026-01-14T23:50:00Z",
       "breakpoints": [
         [ "1", "-1 SP" ]
       ],
@@ -64,7 +64,7 @@
       "costumeName": "Masquerade Bunny",
       "imgName": "masquerade_bunny",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-07T23:59:59",
+      "endDate": "2026-01-07T23:59:59Z",
       "breakpoints": [
         [ "1", "-1 SP" ],
         [ "4", "Buff Duration +2 turns" ]
@@ -90,7 +90,7 @@
       "costumeName": "Overheat",
       "imgName": "overheat",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-07T23:59:59",
+      "endDate": "2026-01-07T23:59:59Z",
       "breakpoints": [
         [ "1", "-1 SP" ]
       ],
@@ -104,7 +104,7 @@
       "costumeName": "Robin Hood",
       "imgName": "robin_hood",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00",
+      "endDate": "2026-01-14T23:50:00Z",
       "breakpoints": [
         [ "3", "-1 SP" ]
       ],
@@ -118,7 +118,7 @@
       "costumeName": "Vanguard",
       "imgName": "vanguard",
       "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00",
+      "endDate": "2026-01-14T23:50:00Z",
       "breakpoints": [
         [ "3", "-1 SP" ]
       ],
