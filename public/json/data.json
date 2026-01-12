@@ -1,8 +1,8 @@
 {
   "tldr": [
-    [ "Queen of Gluttis Granadair", [ 5 ] ],
     [ "Celebrity Bunny Loen", [ 1 ] ],
     [ "Bittersweet Bunny Darian", [ 2 ] ],
+    [ "Queen of Gluttis Granadair", [ 5 ] ],
     [ "Celebrity Bunny Loen", [ 5 ] ],
     [ "Robin Hood Zenith", [ 3 ] ],
     [ "Innocent Bunny Tyr", [ 0 ] ],
@@ -22,21 +22,54 @@
       "breakpoints": [
           [ "1", "-1 SP" ]
       ],
-      "pullReason": "PLS CHANGE"
+      "pullReason": "<b>Yes</b>. This is rotational costume for Granadair, which is more niche compared to Queen of Gluttis, but still good. NEED KIT INFO BRRRR",
+      "pros": [
+        "Buffer / Support",
+        "Unique support mechanics"
+      ],
+      "cons": [
+        "More niche compared to another Granadair costume"
+      ],
+      "modes": {
+        "gr": "Good / Niche",
+        "fh": "Good / Niche",
+        "ln": "Bad",
+        "tos": "Mid",
+        "mw": "?",
+        "gc": "?",
+        "gen": "Niche"
+      }   
     },
     {
       "charName": "Granadair",
       "dmgAtt": "lm",
       "costumeName": "Queen of Gluttis",
-      "role": "Buffer",
+      "role": "Buffer / Support",
       "imgName": "queen_of_gluttis",
       "startDate": "2026-01-15T04:30:00.000Z",
       "endDate": "2026-02-11T23:59:59.000Z",
       "breakpoints": [
           [ "1", "-1 SP" ]
       ],
-      "pullReason": "<b>Absolutely</b>. She's an important Magic type buffer which is similar to Homunculus Lathel. She is new addition to general magic teams and thus should be pulled as much as possible."
+      "pullReason": "<b>Absolutely</b>. She's an important Magic type buffer which is similar to Homunculus Lathel. She is new addition to general magic teams and thus should be pulled as much as possible.",
+      "pros": [
+        "Buffer / Support",
+        "SP Battery",
+        "Suitable for General content (newbie-friendly)"
+      ],
+      "cons": [
+      ],
+      "modes": {
+        "gr": "Meta",
+        "fh": "Meta",
+        "ln": "Decent (need more testing)",
+        "tos": "Good / Meta for magic teams",
+        "mw": "?",
+        "gc": "?",
+        "gen": "Meta"
+      }        
     },
+      
     {
       "charName": "Ventana",
       "dmgAtt": "lp",
