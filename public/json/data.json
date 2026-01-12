@@ -14,6 +14,19 @@
     {
       "charName": "Granadair",
       "dmgAtt": "lm",
+      "costumeName": "Shrine Maiden of Purification",
+      "role": "Buffer",
+      "imgName": "shrine_maiden_of_purification",
+      "startDate": "2026-01-15T04:30:00.000Z",
+      "endDate": "2026-02-11T23:59:59.000Z",
+      "breakpoints": [
+          [ "1", "-1 SP" ]
+      ],
+      "pullReason": "PLS CHANGE"
+    },
+    {
+      "charName": "Granadair",
+      "dmgAtt": "lm",
       "costumeName": "Queen of Gluttis",
       "role": "Buffer",
       "imgName": "queen_of_gluttis",
@@ -22,7 +35,7 @@
       "breakpoints": [
           [ "1", "-1 SP" ]
       ],
-      "pullReason": "<b>Absolutely</b>. She's an important Magic type buffer which is similar to Homunculus Lathel. She is new addition to general magic teams and thus should be pulled as much as possible."        
+      "pullReason": "<b>Absolutely</b>. She's an important Magic type buffer which is similar to Homunculus Lathel. She is new addition to general magic teams and thus should be pulled as much as possible."
     },
     {
       "charName": "Ventana",
