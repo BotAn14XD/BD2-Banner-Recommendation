@@ -1,7 +1,5 @@
 {
   "tldr": [
-    [ "Celebrity Bunny Loen", [ 1 ] ],
-    [ "Celebrity Bunny Loen", [ 5 ] ],
     [ "Queen of Gluttis Granadair", [ 1 ] ],
     [ "Onsen Manager Liberta", [ 1 ] ],
     [ "Shrine Maiden of Purification Granadair", [ 1 ] ],
@@ -25,14 +23,14 @@
       "breakpoints": [
           [ "1", "-1 SP" ]
       ],
-      "pullReason": "<b>Absolutely (MUST)</b>. This costume is quite hard to utilize at its maximum, but sheer damage boost even without conditional increase worth a lot to not skip her. She offers same value of buff as Onsen Manager Liberta, without chain requirenment, making her very powerful magic buffer in almost every mode.",
+      "pullReason": "<b>Absolutely (MUST)</b>. This costume is quite hard to utilize at its maximum, but sheer damage boost even without conditional increase worth a lot to not skip her. She offers same value of buff as Onsen Manager Liberta, but without chain requirenment, making her very powerful magic buffer in almost every mode. Aside of that, she can be used as a slightly weaker Beachside Angel Teresse, in case you don't have her.",
       "pros": [
         "Buffer / Support",
         "Unique support mechanics",
         "First full debuff cleanse costume"
       ],
       "cons": [
-        "Hard to fully utilize"
+        "Hard to trigger additional bonus DMG boost"
       ],
       "modes": {
         "gr": "Good",
@@ -192,72 +190,6 @@
         "tos": "Decent",
         "gen": "Good for towers, mid / niche for rest"
       }
-    },
-    {
-      "charName": "Tyr",
-      "dmgAtt": "wip",
-      "costumeName": "Innocent Bunny",
-      "role": "DPS",
-      "imgName": "innocent_bunny",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00Z",
-      "breakpoints": [
-        [ "2", "Big Damage Increase<br>[1160% &xrarr; 1400%, 8 SP consumed]" ],
-        [ "4", "Big Damage Increase<br>[1450% &xrarr; 1690%, 8 SP consumed]" ]
-      ],
-      "pullReason": "<b>Depends.</b> She is good if you have Starlight Guardian Tyr, otherwise her usage is very limited. Consider pulling low dupe count in order to save for onsen banners.",
-      "modes": {
-        "gr": "maybe usefull",
-        "fh": "not as good as nebris",
-        "ln": "new pov lathel",
-        "tos": "hahaha...no",
-        "mw": "think again about that choice",
-        "gc": "kills blade abuser",
-        "gen": "Big AOE BONK"
-      }
-    },
-    {
-      "charName": "Darian",
-      "dmgAtt": "wap",
-      "costumeName": "Bittersweet Bunny",
-      "role": "DPS",
-      "imgName": "bittersweet_bunny",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00Z",
-      "breakpoints": [
-        [ "1", "-1 SP" ],
-        [ "2", "-2 CD" ]
-      ],
-      "pullReason": "<b>Yes</b>, although her priority is lower than, for example, Celia and Loen. Her conditional skill greatly limits her usage.",
-      "modes": {
-        "fh": "if she hit enough tiles then she is pretty good"
-      }
-    },
-    {
-      "charName": "Loen",
-      "dmgAtt": "fm",
-      "costumeName": "Celebrity Bunny",
-      "role": "DPS",
-      "imgName": "celebrity_bunny",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00Z",
-      "breakpoints": [
-        [ "1", "-1 SP" ]
-      ],
-      "pullReason": "<b>Yes</b>. She is undeniably one of the strongest DPS for a general content, has good scaling versus a lot of enemies and is limited."
-    },
-    {
-      "charName": "Zenith",
-      "dmgAtt": "wip",
-      "costumeName": "Robin Hood",
-      "role": "Chainer, Amplifier",
-      "imgName": "robin_hood",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-14T23:50:00Z",
-      "breakpoints": [
-        [ "3", "-1 SP" ]
-      ],
-      "pullReason": "<b>Yes</b>, She is important support for Fiend Hunter / Guild Raid. Her +3 dupe gives 0 SP skill activation each turn."
     }
   ],
   "damageAttributes": {
