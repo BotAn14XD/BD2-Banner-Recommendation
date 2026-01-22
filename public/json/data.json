@@ -7,9 +7,7 @@
     [ "Onsen Manager Liberta", [ 5 ] ],
     [ "Shrine Maiden of Purification Granadair", [ 5 ] ],
     [ "Onsen Practitioner Ventana", [ 1 ] ],
-    [ "Snow White Ventana", [ 3 ] ],
-    [ "Onsen Practitioner Ventana", [ 3 ] ],
-    [ "Snow White Ventana", [ 5 ] ]
+    [ "Onsen Practitioner Ventana", [ 3 ] ]
   ],
   "banner": [
     {
@@ -98,38 +96,6 @@
         "mw": "Bad",
         "gc": "Bad",
         "gen": "Niche / Bad"
-      }
-    },
-    {
-      "charName": "Ventana",
-      "dmgAtt": "lp",
-      "costumeName": "Snow White",
-      "role": "DPS",
-      "imgName": "snow_white",
-      "startDate": "2026-01-08T00:00:00.000Z",
-      "endDate": "2026-01-21T23:59:59.000Z",
-      "breakpoints": [
-        [ "3", "-1 SP" ]
-      ],
-      "pullReason": "<b>Not quite (Optional / Skip)</b>, unless you have a lot of spare pulls. This costume has great damage capabilities for a nuker like Ventana, but high breakpoint (+3) and other banners priorities shift focus from this one.",
-      "pros": [
-        "Good Physical Nuker",
-        "Highest multiplier amongst Ventana costumes",
-        "Wider AOE compared to rest Ventana costumes"
-      ],
-      "cons": [
-        "Hardly suitable for general content",
-        "Less important in comparison to rest banners",
-        "High breakpoint"
-      ],
-      "modes": {
-        "gr": "Good",
-        "fh": "Good",
-        "ln": "Decent, loses to rest DPS",
-        "tos": "Niche / Decent",
-        "mw": "Bad",
-        "gc": "Mid / Bad",
-        "gen": "Niche / Decent"
       }
     },
     {
