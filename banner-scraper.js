@@ -110,11 +110,11 @@ function checkRelevanceOfNews( newsPublishDateString ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function extractBannerInfo( newsArray ) {
-  const filter = /[a-z]+[\w\s]*costume\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gi; //v2
+  const filter = /[a-z]+[\w\s]*\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gi; //v2
   const bannerInfoArray = [];
 
   for( const maitenanceNews of newsArray ) {
-    const sections = maitenanceNews.content.split( '<br>' );
+    const sections = maitenanceNews.content.split( '<p>' );
     const filteredSections = filterSections( sections, filter );
     const filteredSectionsWithPublishDate = filteredSections.map( section => {
       return {
@@ -134,7 +134,11 @@ function extractBannerInfo( newsArray ) {
 function filterSections( sectionArray, regexFilter ) {
   const bannerArray = [];
   for( const section of sectionArray ) {
-    const banner = section.match( regexFilter );
+    if( !section.toLowerCase().includes( 'available for pickup' ) ) {
+      continue;
+    }
+    sectionParts = section.split( '<br>' );
+    const banner = sectionParts[1].match( regexFilter );
 
     if( banner === null ) {
       continue;
