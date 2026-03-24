@@ -110,7 +110,7 @@ function checkRelevanceOfNews( newsPublishDateString ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function extractBannerInfo( newsArray ) {
-  const filter = /[a-z]+[\w\s]*\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gi; //v2
+  const filter = /(b-)?[a-z]+[\w\s]*\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gi; //v2
   const bannerInfoArray = [];
 
   for( const maitenanceNews of newsArray ) {
@@ -138,7 +138,13 @@ function filterSections( sectionArray, regexFilter ) {
       continue;
     }
     sectionParts = section.split( '<br>' );
-    const banner = sectionParts[1].match( regexFilter );
+    let banner = null;
+    for ( const sectionPart of sectionParts ) {
+      if ( sectionPart.match( regexFilter ) ) {
+        banner = sectionPart.match( regexFilter );
+      }
+    }
+    console.log( banner )
 
     if( banner === null ) {
       continue;
