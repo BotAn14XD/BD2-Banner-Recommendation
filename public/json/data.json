@@ -225,9 +225,9 @@
     {
       "charName": "Yozakura",
       "dmgAtt": "wim",
-      "costumeName": "Fists of Conviction",
+      "costumeName": "Fist of Conviction",
       "role": "",
-      "imgName": "fists_of_conviction",
+      "imgName": "fist_of_conviction",
       "startDate": "2026-04-09T04:30:00.000Z",
       "endDate": "2026-05-06T23:50:00.000Z",
       "breakpoints": [
