@@ -6,11 +6,6 @@
       "costumeUpgrade": 0
     },
     {
-      "id": "shattered_dream",
-      "displayName": "Shattered Dream Palette",
-      "costumeUpgrade": 0
-    },
-    {
       "id": "b-rank_idol_helena",
       "displayName": "B-Rank Idol Helena",
       "costumeUpgrade": 3
@@ -24,91 +19,34 @@
       "id": "night_of_death",
       "displayName": "Night of Death Mamonir",
       "costumeUpgrade": 1
-    },    
-    {
-      "id": "shattered_dream",
-      "displayName": "Shattered Dream Palette",
-      "costumeUpgrade": 1
-    },
-    {
-      "id": "reclaimed_destiny_sacred",
-      "displayName": "Reclaimed Destiny Sacred Justia",
-      "costumeUpgrade": 1
     },
     {
       "id": "bikini_agent",
       "displayName": "Bikini Agent Sylvia",
       "costumeUpgrade": 1
-    },    
+    },
     {
       "id": "b-rank_idol_helena",
       "displayName": "B-Rank Idol Helena",
       "costumeUpgrade": 5
-    },    
+    },
     {
       "id": "robin_hood",
       "displayName": "Robin Hood Zenith",
       "costumeUpgrade": 5
     },
     {
-      "id": "reclaimed_destiny_sacred",
-      "displayName": "Reclaimed Destiny Sacred Justia",
-      "costumeUpgrade": 4
-    },
-    {
       "id": "night_of_death",
       "displayName": "Night of Death Mamonir",
-      "costumeUpgrade": 5
-    },    
-    {
-      "id": "reclaimed_destiny_sacred",
-      "displayName": "Reclaimed Destiny Sacred Justia",
       "costumeUpgrade": 5
     },
     {
       "id": "bikini_agent",
       "displayName": "Bikini Agent Sylvia",
-      "costumeUpgrade": 5
-    },
-    {
-      "id": "shattered_dream",
-      "displayName": "Shattered Dream Palette",
       "costumeUpgrade": 5
     }
   ],
   "banner": [
-    {
-      "charName": "Palette",
-      "dmgAtt": "dm",
-      "costumeName": "Shattered Dream",
-      "role": "Sub DPS, Support",
-      "imgName": "shattered_dream",
-      "startDate": "2026-03-12T04:30:00.000Z",
-      "endDate": "2026-03-25T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ]
-      ],
-      "pullReason": "<b>Yes (Recommended)</b>. She has decent damage even at low dupes, and debuff extension is unique skill you do not want to miss.<br>She's also expected to have another costume soon, meaning missing current will be terrible for her rotation.<br><br><u>She will be in <b>Story Pack 20 Pub</b>, so you can get 1 copy from there.</u>",
-      "pros": [
-        "Good AoE Coverage",
-        "Decent Damage at low dupes for the cost",
-        "Unique Debuff extension mechanic",
-        "Good synergies with some characters"
-      ],
-      "cons": [],
-      "modes": {
-        "gr": "Good / Meta?",
-        "fh": "Good / Meta?",
-        "ln": "Mid",
-        "tos": "Decent / Mid",
-        "mw": "Decent / Good?",
-        "gc": "Decent / Good?",
-        "gen": "Decent / Good"
-      }
-    },
     {
       "charName": "Zenith",
       "dmgAtt": "wip",
@@ -141,43 +79,6 @@
       }
     },
     {
-      "charName": "Justia",
-      "dmgAtt": "lp",
-      "costumeName": "Reclaimed Destiny Sacred",
-      "role": "DPS",
-      "imgName": "reclaimed_destiny_sacred",
-      "startDate": "2026-03-19T00:00:00.000Z",
-      "endDate": "2026-04-01T23:59:59.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "4",
-          "-2 CD"
-        ]
-      ],
-      "pullReason": "<b>Yes (Recommended)</b>. She is great DPS with damage scaling based on enemy count, meaning she's good for almost any AoE fight. Her +4 is important breakpoint to be able to use skill each turn.",
-      "pros": [
-        "Great AoE DPS"
-      ],
-      "cons": [
-        "Requires high investment for constant damage",
-        "Bad for single target fights",
-        "Slightly loses priority to other banners"
-      ],
-      "modes": {
-        "gr": "Good",
-        "fh": "Good",
-        "ln": "Bad",
-        "tos": "Mid",
-        "mw": "Bad",
-        "gc": "Decent / Niche",
-        "gen": "Very Good"
-      }
-    },
-    {
       "charName": "Helena",
       "dmgAtt": "lm",
       "costumeName": "B-Rank Idol",
@@ -186,7 +87,10 @@
       "startDate": "2026-03-26T04:30:00.000Z",
       "endDate": "2026-04-08T23:50:00.000Z",
       "breakpoints": [
-        ["3", "-1 SP"]
+        [
+          "3",
+          "-1 SP"
+        ]
       ],
       "pullReason": "<b>Yes (Must).</b> Although she's not as OP as Liberta, she is still undeniably the core for almost every Magic team.<br><br>Don't forget that she is available in Recommended ★5 Costume Selective Tickets, where taking +1 Helena is recommended from the start.",
       "pros": [
@@ -212,7 +116,10 @@
       "startDate": "2026-03-26T04:30:00.000Z",
       "endDate": "2026-04-08T23:50:00.000Z",
       "breakpoints": [
-        ["1","-1 SP"]
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
       "pullReason": "<b>Yes (Recommended)</b>. Despite being HP-based damage dealer, she got everything you could ask for: low cost, great AoE, high chain count and great damage. Second costume should be released soon as well, filling the missing rotation.<br><br>Keep in mind Mamonir will be accesible in <u><b>Pub (Random pool)</b></u>, so make sure to recruit her for 10 tickets as well as reducing tickets usage on the banner.",
       "pros": [
@@ -244,12 +151,15 @@
       "startDate": "2026-04-02T00:00:00.000Z",
       "endDate": "2026-04-15T23:59:59.000Z",
       "breakpoints": [
-        ["1","-1 SP"]
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
       "pullReason": "<b>Kind of (Optional/Recommended).</b> This costume is Sylvia's nuke costume and is very important for her rotation due to buff extension. However Sylvia heavily relies on Sword Queen costume, which makes heavy Sylvia investment somewhat questionable.<br>Moreover, newly released Mamonir can take a spotlight soon in terms of main DPS of the team.",
       "pros": [
         "Important costume for Sylvia herself"
-    ],
+      ],
       "cons": [
         "Requires high investment for other costumes",
         "Possible priority shift due to Mamonir"
@@ -262,6 +172,126 @@
         "mw": "—",
         "gc": "—",
         "gen": "Decent"
+      }
+    },
+    {
+      "charName": "Hikage",
+      "dmgAtt": "wip",
+      "costumeName": "Kind Ruthlessness",
+      "role": "",
+      "imgName": "kind_ruthlessness",
+      "startDate": "2026-04-09T04:30:00.000Z",
+      "endDate": "2026-05-06T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Ikaruga",
+      "dmgAtt": "fp",
+      "costumeName": "Noble Flame",
+      "role": "",
+      "imgName": "noble_flame",
+      "startDate": "2026-04-09T04:30:00.000Z",
+      "endDate": "2026-05-06T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Yozakura",
+      "dmgAtt": "wim",
+      "costumeName": "Fists of Conviction",
+      "role": "",
+      "imgName": "fists_of_conviction",
+      "startDate": "2026-04-09T04:30:00.000Z",
+      "endDate": "2026-05-06T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Yumi",
+      "dmgAtt": "wam",
+      "costumeName": "Dancing Snowflake",
+      "role": "",
+      "imgName": "dancing_snowflake",
+      "startDate": "2026-04-09T04:30:00.000Z",
+      "endDate": "2026-05-06T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Sonya",
+      "dmgAtt": "dm",
+      "costumeName": "Shadowed Dream",
+      "role": "",
+      "imgName": "shadowed_dream",
+      "startDate": "2026-04-16T00:00:00.000Z",
+      "endDate": "2026-04-29T23:59:59.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
       }
     }
   ],
