@@ -1,6 +1,11 @@
 {
   "tldr": [
     {
+      "id": "miracle_violet",
+      "displayName": "Magical Violet Palette",
+      "costumeUpgrade": 1
+    },
+    {
       "id": "maid_bikini",
       "displayName": "Maid Bikini Rubia",
       "costumeUpgrade": 1
@@ -21,8 +26,23 @@
       "costumeUpgrade": 3
     },
     {
+      "id": "dj",
+      "displayName": "DJ Venaka",
+      "costumeUpgrade": 1
+    },
+    {
       "id": "maid_bikini",
       "displayName": "Maid Bikini Rubia",
+      "costumeUpgrade": 5
+    },
+    {
+      "id": "miracle_violet",
+      "displayName": "Magical Violet Palette",
+      "costumeUpgrade": 5
+    },
+    {
+      "id": "dj",
+      "displayName": "DJ Venaka",
       "costumeUpgrade": 5
     },
     {
@@ -271,48 +291,82 @@
       "charName": "Palette",
       "dmgAtt": "dm",
       "costumeName": "Miracle Violet",
-      "role": "",
+      "role": "Chainer, DPS",
       "imgName": "miracle_violet",
       "startDate": "2026-05-07T04:30:00.000Z",
       "endDate": "2026-05-20T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Rather yes than no (Recommended / Optional)</b>. It is the costume that pairs very well with existing Darkness Magic team, however her output damage heavily depends on the very same team she's helping. Necessary for Palette rotation overall and offers fair amount of hits / chains.",
+      "pros": [
+        [
+          "Covers missing Palette rotation"
+        ],
+        [
+          "Good Damage if condition is triggered"
+        ],
+        [
+          "Decent Chain / Hit count"
+        ],
+        [
+          "Strenghtening own position as Sonya support"
+        ]
+      ],
+      "cons": [
+        [
+          "Tough condition to have impact outside of speficic teams"
+        ]
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Good / Niche Meta",
+        "fh": "Good / Niche Meta",
+        "ln": "Decent",
+        "tos": "Mid",
+        "mw": "Niche / Bad",
+        "gc": "Mid?",
+        "gen": "Mid / Niche"
       }
     },
     {
       "charName": "Venaka",
       "dmgAtt": "wim",
       "costumeName": "DJ",
-      "role": "",
+      "role": "DPS, Shredder",
       "imgName": "dj",
       "startDate": "2026-05-14T00:00:00.000Z",
       "endDate": "2026-05-27T23:59:59.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Not really (Optional / Skip)</b>. Venaka alone is decent DPS, but she's completely blasted out of the competition by Nebris and Tyr, who are the powerhouses for Wind damage overall.<br><br>That being said, she's fair PvP and PvE costume, offering MRES reduction and decent damage. New Burst mechanic will allow her to have 1CD, which may or may not be impactful further on.",
+      "pros": [
+        [
+          "Decent damage"
+        ],
+        [
+          "MRES Shredder"
+        ]
+      ],
+      "cons": [
+        [
+          "Outdamaged by Physical counterparts such as Nebris / Tyr"
+        ]
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Good",
+        "fh": "Good",
+        "ln": "Mid",
+        "tos": "Decent / Good",
+        "mw": "Very Good",
+        "gc": "Mid / Niche",
+        "gen": "Good"
       }
     }
   ],
