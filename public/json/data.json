@@ -6,34 +6,9 @@
       "costumeUpgrade": 1
     },
     {
-      "id": "maid_bikini",
-      "displayName": "Maid Bikini Rubia",
-      "costumeUpgrade": 1
-    },
-    {
-      "id": "miracle_rose",
-      "displayName": "Miracle Rose Liberta",
-      "costumeUpgrade": 1
-    },
-    {
-      "id": "kind_ruthlessness",
-      "displayName": "Kind Ruthlessness Hikage",
-      "costumeUpgrade": 0
-    },
-    {
-      "id": "maid_bikini",
-      "displayName": "Maid Bikini Rubia",
-      "costumeUpgrade": 3
-    },
-    {
       "id": "dj",
       "displayName": "DJ Venaka",
       "costumeUpgrade": 1
-    },
-    {
-      "id": "maid_bikini",
-      "displayName": "Maid Bikini Rubia",
-      "costumeUpgrade": 5
     },
     {
       "id": "miracle_violet",
@@ -44,249 +19,9 @@
       "id": "dj",
       "displayName": "DJ Venaka",
       "costumeUpgrade": 5
-    },
-    {
-      "id": "kind_ruthlessness",
-      "displayName": "Kind Ruthlessness Hikage",
-      "costumeUpgrade": 5
-    },
-    {
-      "id": "dancing_snowflake",
-      "displayName": "Dancing Snowflake Yumi",
-      "costumeUpgrade": 5
     }
   ],
   "banner": [
-    {
-      "charName": "Hikage",
-      "dmgAtt": "wip",
-      "costumeName": "Kind Ruthlessness",
-      "role": "Chainer, DPS",
-      "imgName": "kind_ruthlessness",
-      "startDate": "2026-04-09T04:30:00.000Z",
-      "endDate": "2026-05-06T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "4",
-          "-2 CD"
-        ]
-      ],
-      "pullReason": "<b>Somewhat (Optional)</b>. Nowadays her main usage is in Last Night and very rarely — Fiend Hunter, but, realistically, she's been outperformed by Wilhelmina as chainer completely. Getting 1 or 2 copies is a good idea unless you're going to be really competitive.",
-      "pros": [
-        "High Chain count"
-      ],
-      "cons": [
-        "Rare usage outside of Last Night"
-      ],
-      "modes": {
-        "gr": "Decent",
-        "fh": "Decent",
-        "ln": "Meta",
-        "tos": "Niche",
-        "mw": "Bad",
-        "gc": "Bad",
-        "gen": "Bad"
-      }
-    },
-    {
-      "charName": "Ikaruga",
-      "dmgAtt": "fp",
-      "costumeName": "Noble Flame",
-      "role": "DPS",
-      "imgName": "noble_flame",
-      "startDate": "2026-04-09T04:30:00.000Z",
-      "endDate": "2026-05-06T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "2",
-          "Self-buff increase (60% &rarr; 80% ATK)"
-        ],
-        [
-          "4",
-          "Self-buff increase (80% &rarr; 100% ATK)"
-        ]
-      ],
-      "pullReason": "<b>No (Skip / Collection purposes)</b>. She's just bad. The only use case for her theoretically is in the Golden Colosseum, and even this is with a HUGE question mark.",
-      "pros": [],
-      "cons": [
-        "3 CD for 1-costume character without any future costumes",
-        "VERY fragile buff",
-        "Low damage multiplier"
-      ],
-      "modes": {
-        "gr": "Terrible",
-        "fh": "Terrible",
-        "ln": "Bad / Terrible",
-        "tos": "Bad",
-        "mw": "Terrible",
-        "gc": "Ok-ish???",
-        "gen": "Terrible"
-      }
-    },
-    {
-      "charName": "Yozakura",
-      "dmgAtt": "wim",
-      "costumeName": "Fist of Conviction",
-      "role": "DPS",
-      "imgName": "fist_of_conviction",
-      "startDate": "2026-04-09T04:30:00.000Z",
-      "endDate": "2026-05-06T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "Augmentation increase (400% &rarr; 650%)"
-        ],
-        [
-          "5",
-          "Augmentation increase (650% &rarr; 900%)"
-        ]
-      ],
-      "pullReason": "<b>No (Skip / Collection purposes)</b>. Basic Attack Augmentation may seem good on paper until you realize it means no AoE coverage and mediocre damage output when casting the skill itself.",
-      "pros": [],
-      "cons": [
-        "No real usage pretty much anywhere"
-      ],
-      "modes": {
-        "gr": "Bad",
-        "fh": "Bad",
-        "ln": "Really bad / Terrible",
-        "tos": "Bad",
-        "mw": "Bad / Terrible",
-        "gc": "Bad / Terrible",
-        "gen": "Bad / Terrible"
-      }
-    },
-    {
-      "charName": "Yumi",
-      "dmgAtt": "wam",
-      "costumeName": "Dancing Snowflake",
-      "role": "DPS",
-      "imgName": "dancing_snowflake",
-      "startDate": "2026-04-09T04:30:00.000Z",
-      "endDate": "2026-05-06T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "Frostbite Damage increase (10% &rarr; 15%)"
-        ],
-        [
-          "5",
-          "Frostbite Damage increase (15% &rarr; 20%)"
-        ]
-      ],
-      "pullReason": "<b>Rather no (Optional / Skip / Collection purposes)</b>. Despite being \"not that bad\" of a costume, she's outperformed by almost every Water DPS and rarely sees any usage even in 3rd team in Fiend Hunter.",
-      "pros": [
-        "Theoretically high scailing"
-      ],
-      "cons": [
-        "Weak AOE",
-        "Rarely has any usage"
-      ],
-      "modes": {
-        "gr": "Decent / Good",
-        "fh": "Decent / Good",
-        "ln": "Bad",
-        "tos": "Niche / Bad",
-        "mw": "Bad",
-        "gc": "Bad",
-        "gen": "Bad"
-      }
-    },
-    {
-      "charName": "Liberta",
-      "dmgAtt": "fp",
-      "costumeName": "Miracle Rose",
-      "role": "Chainer, Sub DPS",
-      "imgName": "miracle_rose",
-      "startDate": "2026-04-23T04:30:00.000Z",
-      "endDate": "2026-05-06T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "Crit Rate increase (40% &rarr; 70%)"
-        ]
-      ],
-      "pullReason": "<b>Yes (Recommended).</b> This is not a buffer costume, but, nonetheless, it is quite good 1SP chainer that fills Liberta downtime in rotation. Additionally, she will provide decent cheap damage.<br>Her Crit Rate self-buff makes her an excellent choice in PvP.",
-      "pros": [
-        "Cheap cost",
-        "Decent chainer",
-        "Decent AoE",
-        "HP scaling",
-        "Fills Liberta downtime"
-      ],
-      "cons": [
-        "Not a buffer (compared to rest her costumes)"
-      ],
-      "modes": {
-        "gr": "Decent",
-        "fh": "Decent",
-        "ln": "Mid / Decent",
-        "tos": "Decent",
-        "mw": "Good / Meta",
-        "gc": "Good / Meta",
-        "gen": "Decent"
-      }
-    },
-    {
-      "charName": "Rubia",
-      "dmgAtt": "fp",
-      "costumeName": "Maid Bikini",
-      "role": "Support, DPS",
-      "imgName": "maid_bikini",
-      "startDate": "2026-04-31T00:00:00.000Z",
-      "endDate": "2026-05-13T23:59:59.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "DoT Vulnerability increase (150% &rarr; 200%)"
-        ],
-        [
-          "5",
-          "DoT Vulnerability increase (200% &rarr; 250%)"
-        ]
-      ],
-      "pullReason": "<b>Yes (Recommended)</b>. This is very important costume for DoT teams since it provide enormous buff value. Although that means you need to have good DoT unit such as Liatris to play with this costume.",
-      "pros": [
-        "DoT Support",
-        "Strongest Rubia Costume"
-      ],
-      "cons": [
-        "Need DoT units investment to utilize"
-      ],
-      "modes": {
-        "gr": "Good",
-        "fh": "Good",
-        "ln": "Bad",
-        "tos": "Niche / Bad",
-        "mw": "Bad?",
-        "gc": "Bad?",
-        "gen": "Niche"
-      }
-    },
     {
       "charName": "Palette",
       "dmgAtt": "dm",
@@ -367,6 +102,54 @@
         "mw": "Very Good",
         "gc": "Mid / Niche",
         "gen": "Good"
+      }
+    },
+    {
+      "charName": "Mamonir",
+      "dmgAtt": "wam",
+      "costumeName": "Miracle Marine",
+      "role": "",
+      "imgName": "miracle_marine",
+      "startDate": "2026-05-21T04:30:00.000Z",
+      "endDate": "2026-06-03T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Morpeah",
+      "dmgAtt": "wam",
+      "costumeName": "Beach Vacation",
+      "role": "",
+      "imgName": "beach_vacation",
+      "startDate": "2026-05-28T00:00:00.000Z",
+      "endDate": "2026-06-10T23:59:59.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
       }
     }
   ],

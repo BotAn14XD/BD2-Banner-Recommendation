@@ -22,8 +22,7 @@ const DUPLICATED_COSTUME_NAMES = [
   'new_hire',
   'comeback_idol',
   'b-rank_idol',
-  'apostle',
-  'summer_vacation'
+  'apostle'
 ];
 
 const BANNER_JSON_BLANC = {
