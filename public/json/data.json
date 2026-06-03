@@ -1,9 +1,39 @@
 {
   "tldr": [
-    {
-      "id": "miracle_marine",
-      "displayName": "Miracle Marine Mamonir",
+        {
+      "id": "ocean_vanguard",
+      "displayName": "Ocean Vanguard Luvencia",
       "costumeUpgrade": 1
+    },
+    {
+      "id": "ocean_vanguard",
+      "displayName": "Ocean Vanguard Luvencia",
+      "costumeUpgrade": 2
+    },
+    {
+      "id": "prophetie_dream",
+      "displayName": "Prophetie Dream Darian",
+      "costumeUpgrade": 1
+    },
+    {
+      "id": "ocean_vanguard",
+      "displayName": "Ocean Vanguard Luvencia",
+      "costumeUpgrade": 4
+    },
+    {
+      "id": "prophetie_dream",
+      "displayName": "Prophetie Dream Darian",
+      "costumeUpgrade": 3
+    },
+    {
+      "id": "ocean_vanguard",
+      "displayName": "Ocean Vanguard Luvencia",
+      "costumeUpgrade": 5
+    },
+    {
+      "id": "prophetie_dream",
+      "displayName": "Prophetie Dream Darian",
+      "costumeUpgrade": 5
     },
     {
       "id": "beach_vacation",
@@ -11,50 +41,57 @@
       "costumeUpgrade": 0
     },
     {
-      "id": "miracle_marine",
-      "displayName": "Miracle Marine Mamonir",
-      "costumeUpgrade": 5
+      "id": "deadeye",
+      "displayName": "Deadeye Nekyndalia",
+      "costumeUpgrade": 1
+    },
+    {
+      "id": "beachside_justice",
+      "displayName": "Beachside Justice Michaela",
+      "costumeUpgrade": 1
     },
     {
       "id": "beach_vacation",
       "displayName": "Beach Vacantion Morpeah",
       "costumeUpgrade": 5
+    },
+    {
+      "id": "pool_party_s",
+      "displayName": "Pool Party Scheherazade",
+      "costumeUpgrade": 0
+    },
+    {
+      "id": "pool_party_j",
+      "displayName": "Pool Party Justia",
+      "costumeUpgrade": 0
+    },
+    {
+      "id": "pool_party_s",
+      "displayName": "Pool Party Scheherazade",
+      "costumeUpgrade": 3
+    },
+    {
+      "id": "pool_party_j",
+      "displayName": "Pool Party Justia",
+      "costumeUpgrade": 3
+    },
+    {
+      "id": "pool_party_s",
+      "displayName": "Pool Party Scheherazade",
+      "costumeUpgrade": 5
+    },
+    {
+      "id": "pool_party_j",
+      "displayName": "Pool Party Justia",
+      "costumeUpgrade": 5
+    },
+    {
+      "id": "beachside_justice",
+      "displayName": "Beachside Justice Michaela",
+      "costumeUpgrade": 5
     }
   ],
   "banner": [
-    {
-      "charName": "Mamonir",
-      "dmgAtt": "wam",
-      "costumeName": "Miracle Marine",
-      "role": "Amplifier",
-      "imgName": "miracle_marine",
-      "startDate": "2026-05-21T04:30:00.000Z",
-      "endDate": "2026-06-03T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ]
-      ],
-      "pullReason": "<b>See notes further</b>. This Costume seems to be quite niche, however, she has tremendous raw values.<br><br>If you invested in Mamonir beforehand, she is most likely <b>Recommended</b>.<br>If you did not invest in Mamonir, she is more like <b>Optional</b>.<br><br>Mamonir was already used as Support even outside Water seasons, and this Costume will probably force it down even more. Therefore +1 can be a compromise to maintain her viability without heavily investing before Anniversary.",
-      "pros": [
-        "Tremendous Vulnerability amount",
-        "Filling the gap for rotation",
-        "Amplifier"
-      ],
-      "cons": [
-        "Unconvenient use tile-wise"
-      ],
-      "modes": {
-        "gr": "Meta",
-        "fh": "Meta?",
-        "ln": "Not playable",
-        "tos": "Bad",
-        "mw": "Bad?",
-        "gc": "Bad",
-        "gen": "Bad?"
-      }
-    },
     {
       "charName": "Morpeah",
       "dmgAtt": "wam",
@@ -91,144 +128,202 @@
       "charName": "Luvencia",
       "dmgAtt": "dp",
       "costumeName": "Ocean Vanguard",
-      "role": "",
+      "role": "Selfbuffer / Chainer",
       "imgName": "ocean_vanguard",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ],
+        [
+          "2",
+          "higher ATK Gain per Hit"
+        ],
+        [
+          "4",
+          "higher Chain DMG Gain"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Meta</b>. She will help the other costumes of her to do just more DMG and can stack a few chains on off turns on longer fights. The Buff has a full uptime which is always good!",
+      "pros": [
+        "Selfbuff-Costume",
+        "Chainer for other DPSes"
+      ],
+      "cons": [
+        "Needs other Costumes to get benfit from selfbuffs"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Meta",
+        "fh": "Meta",
+        "ln": "Decent",
+        "tos": "Good",
+        "mw": "Bad",
+        "gc": "Bad",
+        "gen": "Mid"
       }
     },
     {
       "charName": "Nekyndalia",
       "dmgAtt": "wim",
       "costumeName": "Deadeye",
-      "role": "",
+      "role": "Chainer",
       "imgName": "deadeye",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Maybe</b>. She is mostly a PVP Unit for now with just one costume. High Chain are good in Last Night. Otherwise not really worth the pulls for now.",
+      "pros": [
+        "High Chains",
+        "First Costumes that can ignore Evades"
+      ],
+      "cons": [
+        "Niche Pattern",
+        "Only 1 Costume atm"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Niche",
+        "fh": "Niche",
+        "ln": "Good",
+        "tos": "Mid",
+        "mw": "Good?",
+        "gc": "Good?",
+        "gen": "Bad"
       }
     },
     {
       "charName": "Scheherazade",
       "dmgAtt": "wam",
       "costumeName": "Pool Party",
-      "role": "",
+      "role": "Buff Remover / 'Chainer'",
       "imgName": "pool_party_s",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "3",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Optional</b>. Schera is PVP stable and those that enjoy PVP want her. Otherwise for Newbies / Casuals just get a Copy if you want for the Wallpaper / Gacha Skin and then move on.",
+      "pros": [
+        "Cheap SP Costs",
+        "Remove from Buff"
+      ],
+      "cons": [
+        "Bad Pattern",
+        "Low DMG for PVE use"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Unusable",
+        "fh": "Unusable",
+        "ln": "Bad",
+        "tos": "Bad",
+        "mw": "Meta",
+        "gc": "Mid",
+        "gen": "Bad"
       }
     },
     {
       "charName": "Justia",
       "dmgAtt": "lp",
       "costumeName": "Pool Party",
-      "role": "",
+      "role": "Evader / Selfbuffer",
       "imgName": "pool_party_j",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "3",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Optional</b>. Justia really suffers from beeing an old Unit. Her main focus is fixed DMG which this costume helps via selfbuff. Problem is just Fixed DMG is really bad outside of PVP. And even in PVP Olivier pretty much replaced her there with a preemptive Evade.",
+      "pros": [
+        "Selfbuff",
+        "100% Evades"
+      ],
+      "cons": [
+        "Fixed Dmg is Justia Main DMG Source"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Unusable",
+        "fh": "Unusable",
+        "ln": "Unusable",
+        "tos": "Mid",
+        "mw": "Good",
+        "gc": "Good",
+        "gen": "Bad"
       }
     },
     {
       "charName": "Darian",
       "dmgAtt": "wap",
       "costumeName": "Prophetie Dream",
-      "role": "",
+      "role": "DPS",
       "imgName": "prophetie_dream",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>Recommanded</b>. Darian is a great DPS... if she can hit enough tiles. She mostly suffers from the weak Skillpattern. Darian is a stable atm in Last Night and every FH / GR her Attack hits a lot of tiles otherwise she is outclassed by other water dpses.",
+      "pros": [
+        "High DMG on Main Target"
+      ],
+      "cons": [
+        "Skip X-Pattern"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Niche",
+        "fh": "Niche",
+        "ln": "Meta",
+        "tos": "Mid",
+        "mw": "Bad",
+        "gc": "Niche",
+        "gen": "Niche"
       }
     },
     {
       "charName": "Michaela",
       "dmgAtt": "lm",
       "costumeName": "Beachside Justice",
-      "role": "",
+      "role": "Selfbuff / DPS",
       "imgName": "beachside_justice",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        []
+        [
+          "1",
+          "-1 SP"
+        ]
       ],
-      "pullReason": "",
-      "pros": [],
-      "cons": [],
+      "pullReason": "<b>No</b>. Michaela can buff herself for strong follow up turns with her 'Queen of Signatures'-Costume. Big Downside is her HP-Reduction from useing this Skill. Pattern also not the greatest.",
+      "pros": [
+        "Increase of MATK"
+      ],
+      "cons": [
+        "Deal 80% of Current HP as DMG to Michaela",
+        "Niche Pattern",
+        "Meh DMG"
+      ],
       "modes": {
-        "gr": "",
-        "fh": "",
-        "ln": "",
-        "tos": "",
-        "mw": "",
-        "gc": "",
-        "gen": ""
+        "gr": "Niche",
+        "fh": "Niche",
+        "ln": "Bad",
+        "tos": "Bad",
+        "mw": "Niche",
+        "gc": "Bad",
+        "gen": "Bad"
       }
     }
   ],
