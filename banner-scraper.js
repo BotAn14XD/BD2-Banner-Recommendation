@@ -33,6 +33,7 @@ const BANNER_JSON_BLANC = {
   "imgName": "",
   "startDate": "",
   "endDate": "",
+  "prio": 0,
   "breakpoints": [
     []
   ],
@@ -349,6 +350,9 @@ function addBannersToDataFile( bannerArray ) {
   }
 
   dataJSON.banner.sort( ( a, b ) => {
+    if ( a.prio > 0 ) {
+      return -1;
+    }
     if ( a.startDate === b.startDate ) {
       return a.charName.localeCompare( b.charName );
     }
