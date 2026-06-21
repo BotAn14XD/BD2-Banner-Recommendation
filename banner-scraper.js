@@ -31,7 +31,7 @@ const BANNER_JSON_BLANC = {
   "charName": "",
   "dmgAtt": "",
   "costumeName": "",
-  "role": "",
+  "roles": [],
   "imgName": "",
   "startDate": "",
   "endDate": "",

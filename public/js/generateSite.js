@@ -74,6 +74,7 @@ async function createBannerCards( bannerData, utils ) {
   const modesArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
   const damageAttributes = utils[ 'damageAttributes' ];
   const pullPriorityMap = utils[ 'pullPriority' ];
+  const costumeRoles = utils[ 'costumeRoles' ];
 
   for( const bannerChar of bannerData ) {
     const bannerCard = template.content.cloneNode( true );
@@ -120,9 +121,8 @@ async function createBannerCards( bannerData, utils ) {
     cardTitle.appendChild( title );
     cardTitle.classList.remove( 'data-banner-name' );
 
-    const roleLine = bannerCard.querySelector( '[ data-role ]' )
-    const roleText = document.createTextNode( bannerChar.role );
-    roleLine.appendChild( roleText );
+    const roleLine = bannerCard.querySelector( '[ data-role ]' );
+    createRoleBadges( roleLine, costumeRoles, bannerChar.roles );
     roleLine.classList.remove( 'data-role' );
 
     const propertyImg = bannerCard.querySelector( '[ data-property ]' );
@@ -207,6 +207,21 @@ async function createBannerCards( bannerData, utils ) {
   }
 
   template.remove();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function createRoleBadges( container, roleArray, roles ) {
+  for ( const role of roleArray ) {
+    if ( !roles.includes( role ) ) {
+      continue;
+    }
+    const badge = document.createElement( 'span' );
+    badge.classList.add( 'badge', 'bg-secondary-subtle', 'me-1', 'p-2' );
+    badge.textContent = role;
+    container.append( badge );
+  }
 }
 
 

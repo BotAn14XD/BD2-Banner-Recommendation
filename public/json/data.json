@@ -116,7 +116,9 @@
       "charName": "Teresse",
       "dmgAtt": "wap",
       "costumeName": "Beachside Angel",
-      "role": "Support / Buffer",
+      "roles": [
+        "Buffer"
+      ],
       "imgName": "beachside_angel",
       "startDate": "2026-07-02T04:30:00.000Z",
       "endDate": "2026-07-30T23:50:00.000Z",
@@ -150,7 +152,9 @@
       "charName": "Darian",
       "dmgAtt": "wap",
       "costumeName": "Prophetic Dream",
-      "role": "DPS",
+      "roles": [
+        "DPS"
+      ],
       "imgName": "prophetic_dream",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
@@ -182,7 +186,9 @@
       "charName": "Justia",
       "dmgAtt": "lp",
       "costumeName": "Pool Party",
-      "role": "Evader / Selfbuffer",
+      "roles": [
+        "Self-Buffer"
+      ],
       "imgName": "pool_party_justia",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
@@ -215,7 +221,11 @@
       "charName": "Luvencia",
       "dmgAtt": "dp",
       "costumeName": "Ocean Vanguard",
-      "role": "Selfbuffer / Chainer",
+      "roles": [
+        "DPS",
+        "Chainer",
+        "Self-Buffer"
+      ],
       "imgName": "ocean_vanguard",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
@@ -256,7 +266,10 @@
       "charName": "Michaela",
       "dmgAtt": "lm",
       "costumeName": "Beachside Justice",
-      "role": "Selfbuff / DPS",
+      "roles": [
+        "Sub-DPS",
+        "Self-Buffer"
+      ],
       "imgName": "beachside_justice",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
@@ -290,7 +303,9 @@
       "charName": "Nekyndalia",
       "dmgAtt": "wim",
       "costumeName": "Deadeye",
-      "role": "Chainer",
+      "roles": [
+        "Chainer"
+      ],
       "imgName": "deadeye",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-06-17T23:59:59.000Z",
@@ -324,7 +339,9 @@
       "charName": "Scheherazade",
       "dmgAtt": "wam",
       "costumeName": "Pool Party",
-      "role": "Buff Remover / 'Chainer'",
+      "roles": [
+        "Chainer"
+      ],
       "imgName": "pool_party_scheherazade",
       "startDate": "2026-06-04T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
@@ -358,7 +375,10 @@
       "charName": "Granhildr",
       "dmgAtt": "lp",
       "costumeName": "Combat Medic",
-      "role": "Self-buffer, DPS",
+      "roles": [
+        "Sub-DPS",
+        "Self-Buffer"
+      ],
       "imgName": "combat_medic",
       "startDate": "2026-06-18T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",

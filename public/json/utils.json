@@ -46,5 +46,14 @@
     "sr": "Yes ( Recommanded ).",
     "r": "Situational.",
     "n": "No."
-  }
+  },
+  "costumeRoles": [
+    "DPS",
+    "Sub-DPS",
+    "Counter",
+    "Chainer",
+    "Buffer",
+    "Self-Buffer",
+    "Support"
+  ]
 }

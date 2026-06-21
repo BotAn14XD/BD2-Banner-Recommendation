@@ -48,6 +48,7 @@ function createCostumeRecCards( costumeList, utils ) {
   const modesArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
   const damageAttributes = utils[ 'damageAttributes' ];
   const pullPriorityMap = utils[ 'pullPriority' ];
+  const costumeRoles = utils[ 'costumeRoles' ];
 
   for ( const costume of costumeList ) {
     const costumeCard = template.content.cloneNode( true );
@@ -99,8 +100,7 @@ function createCostumeRecCards( costumeList, utils ) {
     cardTitle.classList.remove( 'data-banner-name' );
 
     const roleLine = costumeCard.querySelector( '[ data-role ]' );
-    const roleText = document.createTextNode( rec.role );
-    roleLine.appendChild( roleText );
+    createRoleBadges( roleLine, costumeRoles, rec.roles );
     roleLine.classList.remove( 'data-role' );
 
     const dmgAtt = damageAttributes[ costume.dmgAtt ];
@@ -162,6 +162,21 @@ function createCostumeRecCards( costumeList, utils ) {
   }
 
   template.remove();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function createRoleBadges( container, roleArray, roles ) {
+  for ( const role of roleArray ) {
+    if ( !roles.includes( role ) ) {
+      continue;
+    }
+    const badge = document.createElement( 'span' );
+    badge.classList.add( 'badge', 'bg-secondary-subtle', 'me-1', 'p-2' );
+    badge.textContent = role;
+    container.append( badge );
+  }
 }
 
 
