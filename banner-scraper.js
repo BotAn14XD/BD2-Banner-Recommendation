@@ -39,6 +39,7 @@ const BANNER_JSON_BLANC = {
   "breakpoints": [
     []
   ],
+  "pullPriority": "",
   "pullReason": "",
   "pros": [],
   "cons": [],

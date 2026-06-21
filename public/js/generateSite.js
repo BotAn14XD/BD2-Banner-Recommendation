@@ -1,6 +1,5 @@
 let timeLeftUpdateInterval = null;
 const timeLeftArray = [];
-const pullPrioMap = {};
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -51,7 +50,7 @@ function createTldr( dataArray ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-async function createBannerCards( bannerData, damageAttributes ) {
+async function createBannerCards( bannerData, utils ) {
   /** @type { HTMLDivElement } */
   const container = document.getElementById( 'main-container' );
 
@@ -66,6 +65,8 @@ async function createBannerCards( bannerData, damageAttributes ) {
   shortcutContainer.removeAttribute( 'data-shortcut-container' );
 
   const modesArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
+  const damageAttributes = utils[ 'damageAttributes' ];
+  const pullPriorityMap = utils[ 'pullPriority' ];
 
   for( const bannerChar of bannerData ) {
     const bannerCard = template.content.cloneNode( true );
@@ -160,7 +161,7 @@ async function createBannerCards( bannerData, damageAttributes ) {
     breakpointsContainer.classList.remove( 'data-breakpoints' );
 
     const pullRec = bannerCard.querySelector( '[ data-pull-rec ]' );
-    createPullRecommand( pullRec, bannerChar.pullPriority, bannerChar.pullReason );
+    createPullRecommand( pullRec, pullPriorityMap, bannerChar.pullPriority, bannerChar.pullReason );
     pullRec.classList.remove( 'data-pull-rec' );
 
     //Pros and Cons
@@ -319,10 +320,10 @@ function addListElements( list, dataArray ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function createPullRecommand( container, prio, reason ) {
+function createPullRecommand( container, map, prio, reason ) {
   const prioContainer = document.createElement( 'b' );
   prioContainer.classList.add( `text-${ prio }` );
-  prioContainer.textContent = pullPrioMap[ prio ];
+  prioContainer.textContent = map[ prio ];
 
   container.append( prioContainer );
   container.innerHTML += ` ${ reason }`;
@@ -355,16 +356,14 @@ function updateBannerTimeLeft() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function init() {
-  const res = await fetch( './public/json/data.json' );
-  const jsonData = await res.json();
-  const res2 = await fetch( './public/json/utils.json' );
-  const utilsJson = await res2.json();
-
-  Object.assign( pullPrioMap, utilsJson[ 'pullPriority' ] );
+  const [ jsonData, utils ] = await Promise.all( [
+    fetch( './public/json/data.json' ).then( res => res.json() ),
+    fetch( './public/json/utils.json' ).then( res => res.json() )
+  ] );
 
   createTldr( jsonData[ 'tldr' ] );
 
-  createBannerCards( jsonData[ 'banner' ], utilsJson[ 'damageAttributes' ] );
+  createBannerCards( jsonData[ 'banner' ], utils );
 
   initTimeLeftInterval();
 }
