@@ -125,7 +125,8 @@
         ["1", "-1 SP"],
         ["3", "Higher Duration (4 &rarr; 8 Turns)"]
       ],
-      "pullReason": "<b>Absolutely (Must)</b>. Teresse is a must have support thanks to her versatility for both Magic and Physical teams. Additionally, her buff is not diluted by most buffs (except another Augmentation and Vulnerability), which makes her multiply damage outputeffectively.<br><br>The only downside is locking your team onto low chains setup, which is slight problem for Guild Raid and sometimes Fiend Hunter, but otherwise, she carries insane value as a Support.",
+      "pullPriority": "ur",
+      "pullReason": "Teresse is a must have support thanks to her versatility for both Magic and Physical teams. Additionally, her buff is not diluted by most buffs (except another Augmentation and Vulnerability), which makes her multiply damage outputeffectively.<br><br>The only downside is locking your team onto low chains setup, which is slight problem for Guild Raid and sometimes Fiend Hunter, but otherwise, she carries insane value as a Support.",
       "pros": [
         "Meta Support",
         "Strong Buff Value in unique damage bracket",
@@ -159,7 +160,8 @@
           "-1 SP"
         ]
       ],
-      "pullReason": "<b>Recommanded</b>. Darian is a great DPS... if she can hit enough tiles. She mostly suffers from the weak Skillpattern. Darian is a staple atm in Last Night and every FH / GR her Attack hits a lot of tiles otherwise she is outclassed by other water dpses.",
+      "pullPriority": "sr",
+      "pullReason": "Darian is a great DPS... if she can hit enough tiles. She mostly suffers from the weak Skillpattern. Darian is a staple atm in Last Night and every FH / GR her Attack hits a lot of tiles otherwise she is outclassed by other water dpses.",
       "pros": [
         "High DMG on Main Target"
       ],
@@ -190,7 +192,8 @@
           "-1 SP"
         ]
       ],
-      "pullReason": "<b>Optional</b>. Justia really suffers from beeing an old Unit. Her main focus is fixed DMG which this costume helps via selfbuff. Problem is just Fixed DMG is really bad outside of PVP. And even in PVP Olivier pretty much replaced her there with a preemptive Evade.",
+      "pullPriority": "r",
+      "pullReason": "Justia really suffers from beeing an old Unit. Her main focus is fixed DMG which this costume helps via selfbuff. Problem is just Fixed DMG is really bad outside of PVP. And even in PVP Olivier pretty much replaced her there with a preemptive Evade.",
       "pros": [
         "Selfbuff",
         "100% Evades"
@@ -230,7 +233,8 @@
           "Higher Chain DMG Gain"
         ]
       ],
-      "pullReason": "<b>Meta</b>. She will help the other costumes of her to do just more DMG and can stack a few chains on off turns on longer fights. The Buff has a full uptime which is always good!",
+      "pullPriority": "sr",
+      "pullReason": "She will help the other costumes of her to do just more DMG and can stack a few chains on off turns on longer fights. The Buff has a full uptime which is always good!",
       "pros": [
         "Selfbuff-Costume",
         "Chainer for other DPSes"
@@ -262,7 +266,8 @@
           "-1 SP"
         ]
       ],
-      "pullReason": "<b>No</b>. Michaela can buff herself for strong follow up turns with her 'Queen of Signatures'-Costume. Big Downside is her HP-Reduction from useing this Skill. Pattern also not the greatest.",
+      "pullPriority": "n",
+      "pullReason": "Michaela can buff herself for strong follow up turns with her 'Queen of Signatures'-Costume. Big Downside is her HP-Reduction from useing this Skill. Pattern also not the greatest.",
       "pros": [
         "Increase of MATK"
       ],
@@ -295,7 +300,8 @@
           "-1 SP"
         ]
       ],
-      "pullReason": "<b>Maybe</b>. She is mostly a PVP Unit for now with just one costume. High Chain are good in Last Night. Otherwise not really worth the pulls for now.",
+      "pullPriority": "r",
+      "pullReason": "She is mostly a PVP Unit for now with just one costume. High Chain are good in Last Night. Otherwise not really worth the pulls for now.",
       "pros": [
         "High Chains",
         "First Costumes that can ignore Evades"
@@ -328,7 +334,8 @@
           "-1 SP"
         ]
       ],
-      "pullReason": "<b>Optional</b>. Schera is PVP staple and those that enjoy PVP want her. Otherwise for Newbies / Casuals just get a Copy if you want for the Wallpaper / Gacha Skin and then move on.",
+      "pullPriority": "r",
+      "pullReason": "Schera is PVP staple and those that enjoy PVP want her. Otherwise for Newbies / Casuals just get a Copy if you want for the Wallpaper / Gacha Skin and then move on.",
       "pros": [
         "Cheap SP Costs",
         "Remove from Buff"
@@ -359,7 +366,8 @@
         ["1", "-1 SP"],
         ["3", "Increased Crit DMG Buff (100 &rarr; 150%)"]
       ],
-      "pullReason": "<b>Depends (Optional / Recommended)</b>. To put it simply, if you have your Granhildr already built, she is important to get at least +3 for the maximum self-buff value for Boo Ghost Costume. Otherwise, you could compromise at +1, since, without strong Comeback Idol and Boo Ghost dupes, her damage will not be great.<br><br>Buff requirenment is very easy to obtain, so she will work as Beach Sylvia in that regard most of the time.",
+      "pullPriority": "r",
+      "pullReason": "To put it simply, if you have your Granhildr already built, she is important to get at least +3 for the maximum self-buff value for Boo Ghost Costume. Otherwise, you could compromise at +1, since, without strong Comeback Idol and Boo Ghost dupes, her damage will not be great.<br><br>Buff requirenment is very easy to obtain, so she will work as Beach Sylvia in that regard most of the time.",
       "pros": [
         "Self-buffer",
         "Makes rotation a bit more clear",

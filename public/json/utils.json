@@ -40,5 +40,11 @@
       "element": "dark",
       "dmgType": "Magic"
     }
+  },
+  "pullPriority": {
+    "ur": "Yes ( Must ).",
+    "sr": "Yes ( Recommanded ).",
+    "r": "Situational.",
+    "n": "No."
   }
 }

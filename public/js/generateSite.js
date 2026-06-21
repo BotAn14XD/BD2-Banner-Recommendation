@@ -1,5 +1,6 @@
 let timeLeftUpdateInterval = null;
 const timeLeftArray = [];
+const pullPrioMap = {};
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -158,9 +159,9 @@ async function createBannerCards( bannerData, damageAttributes ) {
     }
     breakpointsContainer.classList.remove( 'data-breakpoints' );
 
-    const pullReason = bannerCard.querySelector( '[ data-pull-reason ]' );
-    pullReason.innerHTML = bannerChar.pullReason;
-    pullReason.classList.remove( 'data-pull-reason' );
+    const pullRec = bannerCard.querySelector( '[ data-pull-rec ]' );
+    createPullRecommand( pullRec, bannerChar.pullPriority, bannerChar.pullReason );
+    pullRec.classList.remove( 'data-pull-rec' );
 
     //Pros and Cons
     const pros = bannerCard.querySelector( '[ data-pros ]' );
@@ -318,6 +319,18 @@ function addListElements( list, dataArray ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function createPullRecommand( container, prio, reason ) {
+  const prioContainer = document.createElement( 'b' );
+  prioContainer.classList.add( `text-${ prio }` );
+  prioContainer.textContent = pullPrioMap[ prio ];
+
+  container.append( prioContainer );
+  container.innerHTML += ` ${ reason }`;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function initTimeLeftInterval() {
   const now = new Date();
   const msUntilNextMin = ( 60 - now.getSeconds() ) * 1000 - now.getMilliseconds();
@@ -346,6 +359,8 @@ async function init() {
   const jsonData = await res.json();
   const res2 = await fetch( './public/json/utils.json' );
   const utilsJson = await res2.json();
+
+  Object.assign( pullPrioMap, utilsJson[ 'pullPriority' ] );
 
   createTldr( jsonData[ 'tldr' ] );
 
