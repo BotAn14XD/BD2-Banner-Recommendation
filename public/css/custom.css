@@ -94,7 +94,7 @@ section {
   }
 }
 
-@media ( max-width: 450px ) {
+@media ( min-width: 415px ) and ( max-width: 450px ) {
   .tablist-entry {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
@@ -106,11 +106,13 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  .borderless {
-    border-width: 0 !important;
+@media (max-width: 767px) {
+  .border-end.borderless {
+    border-right-width: 0 !important;
   }
+}
 
+@media (max-width: 768px) {
   .small-header {
     display: flex;
   }
