@@ -45,10 +45,11 @@ function createCostumeRecCards( costumeList, utils ) {
   /** @type { HTMLTemplateElement } */
   const template = document.getElementById( 'costumeCard' );
 
-  const modesArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
+  const costumeRoles = utils[ 'costumeRoles' ];
   const damageAttributes = utils[ 'damageAttributes' ];
   const pullPriorityMap = utils[ 'pullPriority' ];
-  const costumeRoles = utils[ 'costumeRoles' ];
+  const modeArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
+  const modeRatings = utils[ 'modeRatings' ];
 
   for ( const costume of costumeList ) {
     const costumeCard = template.content.cloneNode( true );
@@ -146,17 +147,8 @@ function createCostumeRecCards( costumeList, utils ) {
     cons.classList.remove( 'data-cons' );
 
     //Modes
-    const costumeModeSuggestions = rec.modes;
-    for( const mode of modesArray ) {
-      const modeContainer = costumeCard.querySelector( `[ data-${ mode } ]` );
-      modeContainer.removeAttribute( `data-${ mode }` );
-      const suggestion = costumeModeSuggestions?.[ mode ];
-      if ( suggestion || typeof suggestion === 'string'  ) {
-        modeContainer.textContent = suggestion;
-        continue;
-      }
-      modeContainer.textContent = String.fromCharCode( 8212 );
-    }
+    const costumeModeRatings = rec.modes;
+    fillModeRatingTable( costumeCard, modeArray, modeRatings, costumeModeRatings, costume.imgName );
 
     container.appendChild( costumeCard );
   }
@@ -263,6 +255,45 @@ function createPullRecommand( container, map, prio, reason ) {
 
   container.append( prioContainer );
   container.innerHTML += ` ${ reason }`;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function fillModeRatingTable( costumeCard, modeArray, modeRatings, costumeRatings, costumeName ) {
+  for( const mode of modeArray ) {
+    const modeContainer = costumeCard.querySelector( `[ data-${ mode } ]` );
+    modeContainer.removeAttribute( `data-${ mode }` );
+    const rating = costumeRatings?.[ mode ];
+    if ( !( rating && typeof rating === 'string' ) ) {
+      modeContainer.textContent = String.fromCharCode( 8212 );
+      continue;
+    }
+    const ratingColor = modeRatings[ rating ] || '';
+    if ( !ratingColor ) {
+      console.error( `Not valid rating! [ ${ costumeName } : ${ mode } = ${ rating } ]` );
+      modeContainer.textContent = String.fromCharCode( 8212 );
+      continue;
+    }
+
+    const row = document.createElement( 'div' );
+    row.classList.add( 'row', 'align-items-center' );
+
+    const colorCol = document.createElement( 'div' );
+    colorCol.classList.add( 'col-auto', 'pe-0' );
+    const colorContainer = document.createElement( 'span' );
+    colorContainer.classList.add( 'ratingColorBox', `bg-${ ratingColor }`, 'rounded-1' );
+    colorCol.append( colorContainer );
+
+    const ratingCol = document.createElement( 'div' );
+    ratingCol.classList.add( 'col', 'px-0' );
+    const ratingContainer = document.createElement( 'div' );
+    ratingContainer.textContent = rating;
+    ratingCol.append( ratingContainer );
+
+    row.append( colorCol, ratingCol );
+    modeContainer.append( row );
+  }
 }
 
 

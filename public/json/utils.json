@@ -55,5 +55,11 @@
     "Buffer",
     "Self-Buffer",
     "Support"
-  ]
+  ],
+  "modeRatings": {
+    "Meta": "ur",
+    "Good": "sr",
+    "Niche": "r",
+    "Bad": "n"
+  }
 }
