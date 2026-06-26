@@ -43,7 +43,7 @@
   },
   "pullPriority": {
     "ur": "Yes ( Must ).",
-    "sr": "Yes ( Recommanded ).",
+    "sr": "Yes ( Recommended ).",
     "r": "Situational.",
     "n": "No (Skip)."
   },
