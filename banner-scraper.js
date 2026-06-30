@@ -35,7 +35,6 @@ const BANNER_JSON_BLANC = {
   "imgName": "",
   "startDate": "",
   "endDate": "",
-  "prio": 0,
   "breakpoints": [
     []
   ],
@@ -130,7 +129,7 @@ function checkRelevanceOfNews( newsPublishDateString ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function extractBannerInfo( inspectionArray ) {
-  const filter = /(b-)?[a-z]+[\w\s]*costume\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gmi; //v2
+  const filter = /(laid-)?(b-)?[a-z]+[\w\s]*costume\s*:[\w\s,:]*(\(utc\))?\s*[-~]+[\w\s,:]+(\(utc\))?/gmi; //v2
   const bannerInfoArray = [];
 
   for( const inspection of inspectionArray ) {
@@ -355,6 +354,9 @@ function addBannersToDataFile( bannerArray ) {
   dataJSON.banner.sort( ( a, b ) => {
     if ( a.prio > 0 ) {
       return -1;
+    }
+    if ( !a.prio ) {
+      return 1;
     }
     if ( a.startDate === b.startDate ) {
       return a.charName.localeCompare( b.charName );

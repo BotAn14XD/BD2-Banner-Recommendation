@@ -56,11 +56,6 @@
       "costumeUpgrade": 5
     },
     {
-      "id": "deadeye",
-      "displayName": "Deadeye Nekyndalia",
-      "costumeUpgrade": 1
-    },
-    {
       "id": "combat_medic",
       "displayName": "Combat Medic Granhildr",
       "costumeUpgrade": 3
@@ -124,8 +119,14 @@
       "endDate": "2026-07-30T23:50:00.000Z",
       "prio": 1,
       "breakpoints": [
-        ["1", "-1 SP"],
-        ["3", "Higher Duration [ 4 &rarr; 8 Turns ]"]
+        [
+          "1",
+          "-1 SP"
+        ],
+        [
+          "3",
+          "Higher Duration [ 4 &rarr; 8 Turns ]"
+        ]
       ],
       "pullPriority": "ur",
       "pullReason": "Teresse is a must have support thanks to her versatility for both Magic and Physical teams. Additionally, her buff is not diluted by most buffs [ except another Augmentation and Vulnerability ], which makes her multiply damage outputeffectively.<br><br>The only downside is locking your team onto low chains setup, which is slight problem for Guild Raid and sometimes Fiend Hunter, but otherwise, she carries insane value as a Support.",
@@ -300,42 +301,6 @@
       }
     },
     {
-      "charName": "Nekyndalia",
-      "dmgAtt": "wim",
-      "costumeName": "Deadeye",
-      "roles": [
-        "Chainer"
-      ],
-      "imgName": "deadeye",
-      "startDate": "2026-06-04T04:30:00.000Z",
-      "endDate": "2026-06-17T23:59:59.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ]
-      ],
-      "pullPriority": "r",
-      "pullReason": "She is mostly a PVP Unit for now with just one costume. High Chain are good in Last Night. Otherwise not really worth the pulls for now.",
-      "pros": [
-        "High Chains",
-        "First Costumes that can ignore Evades"
-      ],
-      "cons": [
-        "Niche Pattern",
-        "Only 1 Costume atm"
-      ],
-      "modes": {
-        "gr": "Niche",
-        "fh": "Niche",
-        "ln": "Good",
-        "tos": "Mid",
-        "mw": "Good?",
-        "gc": "Good?",
-        "gen": "Bad"
-      }
-    },
-    {
       "charName": "Scheherazade",
       "dmgAtt": "wam",
       "costumeName": "Pool Party",
@@ -383,8 +348,14 @@
       "startDate": "2026-06-18T04:30:00.000Z",
       "endDate": "2026-07-01T23:50:00.000Z",
       "breakpoints": [
-        ["1", "-1 SP"],
-        ["3", "Increased Crit DMG Buff [ 100 &rarr; 150% ]"]
+        [
+          "1",
+          "-1 SP"
+        ],
+        [
+          "3",
+          "Increased Crit DMG Buff [ 100 &rarr; 150% ]"
+        ]
       ],
       "pullPriority": "r",
       "pullReason": "To put it simply, if you have your Granhildr already built, she is important to get at least +3 for the maximum self-buff value for Boo Ghost Costume. Otherwise, you could compromise at +1, since, without strong Comeback Idol and Boo Ghost dupes, her damage will not be great.<br><br>Buff requirenment is very easy to obtain, so she will work as Beach Sylvia in that regard most of the time.",
@@ -405,6 +376,81 @@
         "mw": "Not usable / Very Niche",
         "gc": "Not usable / Very Niche",
         "gen": "Not usable"
+      }
+    },
+    {
+      "charName": "Elise",
+      "dmgAtt": "fp",
+      "costumeName": "Naive Lady",
+      "roles": [],
+      "imgName": "naive_lady",
+      "startDate": "2026-07-02T04:30:00.000Z",
+      "endDate": "2026-07-15T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullPriority": "",
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Nebris",
+      "dmgAtt": "wip",
+      "costumeName": "Laid-back Lifeguard",
+      "roles": [],
+      "imgName": "laid-back_lifeguard",
+      "startDate": "2026-07-02T04:30:00.000Z",
+      "endDate": "2026-07-29T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullPriority": "",
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
+      }
+    },
+    {
+      "charName": "Seir",
+      "dmgAtt": "dm",
+      "costumeName": "B-Rank Idol",
+      "roles": [],
+      "imgName": "b-rank_idol_seir",
+      "startDate": "2026-07-02T04:30:00.000Z",
+      "endDate": "2026-07-09T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullPriority": "",
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
       }
     }
   ]
