@@ -441,7 +441,7 @@
       "endDate": "2026-07-15T23:50:00.000Z",
       "breakpoints": [
         [
-          "1", 
+          "1",
           "-1 SP"
         ],
         [
@@ -486,10 +486,12 @@
       "endDate": "2026-07-29T23:50:00.000Z",
       "breakpoints": [
         [
-          "1","-1 SP"
+          "1",
+          "-1 SP"
         ],
         [
-          "3", "ATK Buff Duration Increase [ 6 &rarr; 10 Turns ]"
+          "3",
+          "ATK Buff Duration Increase [ 6 &rarr; 10 Turns ]"
         ]
       ],
       "pullPriority": "sr",
@@ -523,10 +525,12 @@
       "endDate": "2026-07-09T23:50:00.000Z",
       "breakpoints": [
         [
-          "2", "+1 SP Restored"
+          "2",
+          "+1 SP Restored"
         ],
         [
-          "3", "-1 SP"
+          "3",
+          "-1 SP"
         ]
       ],
       "pullPriority": "sr",
