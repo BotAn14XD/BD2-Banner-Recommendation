@@ -1545,5 +1545,37 @@
       "gc": "Bad",
       "gen": "Bad"
     }
+  },
+  "steel_engine": {
+    "roles": [
+      "Sub-DPS",
+      "Support"
+    ],
+    "startDate": "2026-07-16T04:30:00.000Z",
+    "endDate": "2026-07-22T23:59:59.000Z",
+    "breakpoints": [
+      [
+        "3",
+        "-1 SP"
+      ]
+    ],
+    "pullPriority": "n",
+    "pullReason": "Rafina has some damage, and this costume is good rotational one, but Rafina is barely used, and even if she is, definitely not as Main DPS. Her cleanse is unique, but she does not need dupes for that to work.<br><br><i>Make sure to recruit her from <b>pub</b> for free 10 Draw Tickets.</i>",
+    "pros": [
+      "Unique cleanse"
+    ],
+    "cons": [
+      "Low usage rate",
+      "Sub-DPS instead of proper one"
+    ],
+    "modes": {
+      "gr": "Niche",
+      "fh": "Niche",
+      "ln": "Niche",
+      "tos": "Good",
+      "mw": "Niche",
+      "gc": "Niche",
+      "gen": "Good"
+    }
   }
 }
