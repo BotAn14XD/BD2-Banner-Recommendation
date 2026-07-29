@@ -208,7 +208,9 @@
       "charName": "Nartas",
       "dmgAtt": "dm",
       "costumeName": "Anonymous Sage",
-      "roles": [],
+      "roles": [
+        "DPS"
+      ],
       "imgName": "anonymous_sage",
       "startDate": "2026-07-23T00:00:00.000Z",
       "endDate": "2026-07-29T23:50:00.000Z",
