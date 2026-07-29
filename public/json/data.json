@@ -265,7 +265,7 @@
         ]
       ],
       "pullPriority": "r",
-      "pullReason": "Her debuff is unique, sure, but first, it increases your damage output roughly by 75% at max. Additionally, her other costumes are not suited for PvE at all, which makes her PvE usage really questionable. The most you could expect, as of now, is going into cheerleading team in Fiend Hunter.",
+      "pullReason": "Her debuff is unique, sure, but first, it increases your damage output roughly by 75% at max. Additionally, her other costumes are not suited for PvE at all, which makes her PvE usage really questionable. The most you could expect, as of now, is going into the cheerleading team in Fiend Hunter.",
       "pros": [
         "Support Costume",
         "Good AoE",
@@ -303,7 +303,7 @@
         ]
       ],
       "pullPriority": "r",
-      "pullReason": "Yuri is OK-ish DPS that often fights with other Light DPS for spot to be in teams. This costume has better DPS than Whitebolt, although, both are necessary for given self-buffs and rotation. I would consider her only if you lack Light DPS and have Whitebold at at least +1.",
+      "pullReason": "Yuri is good DPS that often fights with other Light DPS for a spot in team lineups. This costume has higher damage than Whitebolt, although, both are necessary for self-buffs and her rotation. I would consider her only if you lack Light DPS and have Whitebold at at least +1.",
       "pros": [
         "Decent Light DPS"
       ],
@@ -333,13 +333,15 @@
       "breakpoints": [
         [
           "2",
-          "ATK Buff & Duration increase [ 100% &rarr; 150%, 2 Turns &rarr; 4 Turns ]",
+          "ATK Buff & Duration increase [ 100% &rarr; 150%, 2 Turns &rarr; 4 Turns ]"
+        ],
+        [
           "5",
           "ATK Buff & Duration increase [ 150% &rarr; 200%, 4 Turns &rarr; 6 Turns ]"
         ]
       ],
       "pullPriority": "sr",
-      "pullReason": "If you ever plan to build a Sylvia, this is costume that you must have. This Costume offers big ATK buff to herself which is furthermore exploited by Bikini Agent Costume.",
+      "pullReason": "If you ever plan to build a Sylvia, this is costume that you must have. This Costume offers a big ATK buff to herself which is furthermore exploited by Bikini Agent Sylvia.",
       "pros": [
         "The mandatory Costume for Sylvia"
       ],
