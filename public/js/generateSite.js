@@ -14,7 +14,7 @@ function createTldr( dataArray ) {
   for( let i = 0; i < dataArray.length; ++i ) {
     const step = dataArray[ i ];
     const stepContainer = document.createElement( 'div' );
-    stepContainer.classList.add( 'flex-grow-0', 'pe-2' );
+    stepContainer.classList.add( 'd-flex','text-nowrap', 'pe-2', 'align-items-center' );
     stepContainer.setAttribute( 'data-tldr-step', step.id );
     stepContainer.append( step.displayName );
     const picture = document.createElement( 'picture' );
