@@ -14,7 +14,7 @@ function createTldr( dataArray ) {
   for( let i = 0; i < dataArray.length; ++i ) {
     const step = dataArray[ i ];
     const stepContainer = document.createElement( 'div' );
-    stepContainer.classList.add( 'd-flex','text-nowrap', 'pe-2', 'align-items-center' );
+    stepContainer.classList.add( 'd-flex', 'text-nowrap', 'pe-1', 'align-items-center' );
     stepContainer.setAttribute( 'data-tldr-step', step.id );
     stepContainer.append( step.displayName );
     const picture = document.createElement( 'picture' );
@@ -40,7 +40,6 @@ function createTldr( dataArray ) {
 
     if ( i < dataArray.length - 1 ) {
       const arrowContainer = document.createElement( 'span' );
-      arrowContainer.classList.add( 'ps-2' );
       arrowContainer.textContent = arrow;
       stepContainer.append( arrowContainer );
     }
