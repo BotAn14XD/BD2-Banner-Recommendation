@@ -185,13 +185,13 @@ th {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .small-header {
     display: flex;
   }
 
   .small-header .container {
-    max-width: 768px;
+    max-width: 1000px;
   }
 
   .big-header {
@@ -199,9 +199,9 @@ th {
   }
 }
 
-@media ( min-width: 769px ) and ( max-width: 900px ) {
+@media ( max-width: 400px ) {
   .navbar select {
-    max-width: 10rem;
+    max-width: 16rem;
   }
 }
 
@@ -213,3 +213,10 @@ th {
     border-right: 3px solid var( --bs-border-color );
   }
 }
+
+@media ( min-width: 470px )  and ( max-width: 1000px ) {
+  .modal-top-margin {
+    margin-top: 1rem;
+  }
+}
+

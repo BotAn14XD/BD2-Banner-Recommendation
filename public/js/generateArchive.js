@@ -50,7 +50,7 @@ function createCostumeRecCards( costumeList, utils ) {
   const pullPriorityMap = utils[ 'pullPriority' ];
   const modeArray = [ 'gr', 'fh', 'ln', 'tos', 'mw', 'gc', 'gen' ];
   const modeRatings = utils[ 'modeRatings' ];
-
+ 
   for ( const costume of costumeList ) {
     const costumeCard = template.content.cloneNode( true );
 
@@ -92,6 +92,7 @@ function createCostumeRecCards( costumeList, utils ) {
     costumeImg.src = `./public/images/costumes/${ costume.imgName || 'nightmare_bunny' }.png`;
     costumeImg.alt = costume.imgName;
     costumeImg.title = costume.costumeName;
+    costumeImg.fetchPriority = 'high';
     costumeImg.removeAttribute( 'data-costume-image' );
 
     const cardTitle = costumeCard.querySelector( '[ data-banner-name ]' );
@@ -134,7 +135,7 @@ function createCostumeRecCards( costumeList, utils ) {
     breakpointsContainer.removeAttribute( 'data-breakpoints' );
 
     const pullRec = costumeCard.querySelector( '[ data-pull-rec ]' );
-    createPullRecommand( pullRec, pullPriorityMap, rec.pullPriority, rec.pullReason );
+    createPullRecommendation( pullRec, pullPriorityMap, rec.pullPriority, rec.pullReason );
     pullRec.removeAttribute( 'data-pull-rec' );
 
     //Pros and Cons
@@ -248,7 +249,7 @@ function addListElements( list, dataArray ) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function createPullRecommand( container, map, prio, reason ) {
+function createPullRecommendation( container, map, prio, reason ) {
   const prioContainer = document.createElement( 'b' );
   prioContainer.classList.add( `text-${ prio }` );
   prioContainer.textContent = map[ prio ];
