@@ -1,21 +1,6 @@
 {
   "tldr": [
     {
-      "id": "beachside_angel",
-      "displayName": "Beachside Angel Teresse",
-      "costumeUpgrade": 1
-    },
-    {
-      "id": "beachside_angel",
-      "displayName": "Beachside Angel Teresse",
-      "costumeUpgrade": 3
-    },
-    {
-      "id": "beachside_angel",
-      "displayName": "Beachside Angel Teresse",
-      "costumeUpgrade": 5
-    },
-    {
       "id": "heavenly_guardian_successor",
       "displayName": "Heavenly Guardian Successor Glacia",
       "costumeUpgrade": 1
@@ -41,34 +26,9 @@
       "costumeUpgrade": 1
     },
     {
-      "id": "laid-back_lifeguard",
-      "displayName": "Laid-Back Lifeguard Nebris",
-      "costumeUpgrade": 1
-    },
-    {
-      "id": "tricky_lover",
-      "displayName": "Tricky Lover Dalvi",
-      "costumeUpgrade": 1
-    },
-    {
       "id": "heavenly_guardian_successor",
       "displayName": "Heavenly Guardian Successor Glacia",
       "costumeUpgrade": 4
-    },
-    {
-      "id": "laid-back_lifeguard",
-      "displayName": "Laid-Back Lifeguard Nebris",
-      "costumeUpgrade": 3
-    },
-    {
-      "id": "tricky_lover",
-      "displayName": "Tricky Lover Dalvi",
-      "costumeUpgrade": 5
-    },
-    {
-      "id": "laid-back_lifeguard",
-      "displayName": "Laid-Back Lifeguard Nebris",
-      "costumeUpgrade": 5
     },
     {
       "id": "sword_queen",
@@ -87,161 +47,6 @@
     }
   ],
   "banner": [
-    {
-      "charName": "Teresse",
-      "dmgAtt": "wap",
-      "costumeName": "Beachside Angel",
-      "roles": [
-        "Buffer"
-      ],
-      "imgName": "beachside_angel",
-      "startDate": "2026-07-02T04:30:00.000Z",
-      "endDate": "2026-07-29T23:50:00.000Z",
-      "prio": 1,
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "Higher Duration [ 4 &rarr; 8 Turns ]"
-        ]
-      ],
-      "pullPriority": "ur",
-      "pullReason": "Teresse is a must have support thanks to her versatility for both Magic and Physical teams. Additionally, her buff is not diluted by most buffs [ except another Augmentation and Vulnerability ], which makes her multiply damage outputeffectively.<br><br>The only downside is locking your team onto low chains setup, which is slight problem for Guild Raid and sometimes Fiend Hunter, but otherwise, she carries insane value as a Support.",
-      "pros": [
-        "Meta Support",
-        "Strong Buff Value in unique damage bracket",
-        "Universal for both Magic and Physical Teams"
-      ],
-      "cons": [
-        "Requires low chains",
-        "Limited Costume"
-      ],
-      "modes": {
-        "gr": "Niche",
-        "fh": "Meta",
-        "ln": "Bad",
-        "tos": "Good",
-        "mw": "Good",
-        "gc": "Meta",
-        "gen": "Meta"
-      }
-    },
-    {
-      "charName": "Nebris",
-      "dmgAtt": "wip",
-      "costumeName": "Laid-back Lifeguard",
-      "roles": [
-        "Self-Buffer",
-        "Sub-DPS"
-      ],
-      "imgName": "laid-back_lifeguard",
-      "startDate": "2026-07-02T04:30:00.000Z",
-      "endDate": "2026-07-29T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ],
-        [
-          "3",
-          "ATK Buff Duration Increase [ 6 &rarr; 10 Turns ]"
-        ]
-      ],
-      "pullPriority": "sr",
-      "pullReason": "Despite not giving you much damage output, Laid-back Lifeguard Nebris is a good self-buff costume, filling in the rotation as well as providing a long ATK-Buff. If you use this costume properly.",
-      "pros": [
-        "Self-Buff Costume for one of the best Physical DPS"
-      ],
-      "cons": [
-        "Low DMG Output",
-        "Tricky ATK Buff activation"
-      ],
-      "modes": {
-        "gr": "Meta",
-        "fh": "Meta",
-        "ln": "Bad",
-        "tos": "Niche",
-        "mw": "Bad",
-        "gc": "Bad",
-        "gen": "Niche"
-      }
-    },
-    {
-      "charName": "Dalvi",
-      "dmgAtt": "wim",
-      "costumeName": "Tricky Lover",
-      "roles": [
-        "DPS"
-      ],
-      "imgName": "tricky_lover",
-      "startDate": "2026-07-16T04:30:00.000Z",
-      "endDate": "2026-07-29T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "1",
-          "-1 SP"
-        ]
-      ],
-      "pullPriority": "r",
-      "pullReason": "This costume functions similarly to Maid Name R Liatris, but with an even stronger requirement to be used as the final costume in a rotation. Despite her strong damage numbers, the commonly used 9-turn rotation is inefficient for Dalvi, as it results in multiple missed Bleed stacks.",
-      "pros": [
-        "Strong Nuke"
-      ],
-      "cons": [
-        "Long Cooldown",
-        "Messed Dalvi Rotation that does not allow for a full potential"
-      ],
-      "modes": {
-        "gr": "Niche",
-        "fh": "Good",
-        "ln": "Bad",
-        "tos": "Niche",
-        "mw": "Bad",
-        "gc": "Bad",
-        "gen": "Niche"
-      }
-    },
-    {
-      "charName": "Nartas",
-      "dmgAtt": "dm",
-      "costumeName": "Anonymous Sage",
-      "roles": [
-        "DPS"
-      ],
-      "imgName": "anonymous_sage",
-      "startDate": "2026-07-23T00:00:00.000Z",
-      "endDate": "2026-07-29T23:50:00.000Z",
-      "breakpoints": [
-        [
-          "2",
-          "Conditional Damage Increase [ 450% &rarr; 600% ]"
-        ],
-        [
-          "4",
-          "Conditional Damage Increase [ 650% &rarr; 800% ]"
-        ]
-      ],
-      "pullPriority": "n",
-      "pullReason": "Poor boy Nartas is left out of the competition of being a meaningful DPS, considering his bad AoE and mediocre damage, as well has no self-buffs.",
-      "pros": [],
-      "cons": [
-        "Bad AoE",
-        "No Self-Buff Costumes",
-        "Bad + Conditional Damage"
-      ],
-      "modes": {
-        "gr": "Bad",
-        "fh": "Niche",
-        "ln": "Bad",
-        "tos": "Niche",
-        "mw": "Bad",
-        "gc": "Bad",
-        "gen": "Bad"
-      }
-    },
     {
       "charName": "Glacia",
       "dmgAtt": "wam",
@@ -394,6 +199,31 @@
         "mw": "Niche",
         "gc": "Niche",
         "gen": "Niche"
+      }
+    },
+    {
+      "charName": "Lathel",
+      "dmgAtt": "fp",
+      "costumeName": "Lonely Survivor",
+      "roles": [],
+      "imgName": "lonely_survivor",
+      "startDate": "2026-08-06T00:00:00.000Z",
+      "endDate": "2026-08-12T23:50:00.000Z",
+      "breakpoints": [
+        []
+      ],
+      "pullPriority": "",
+      "pullReason": "",
+      "pros": [],
+      "cons": [],
+      "modes": {
+        "gr": "",
+        "fh": "",
+        "ln": "",
+        "tos": "",
+        "mw": "",
+        "gc": "",
+        "gen": ""
       }
     }
   ]
