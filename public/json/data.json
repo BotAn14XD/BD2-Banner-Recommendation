@@ -215,17 +215,29 @@
       "charName": "Lathel",
       "dmgAtt": "fp",
       "costumeName": "Lonely Survivor",
-      "roles": ["Sub-DPS", "Self-Buffer"],
+      "roles": [
+        "Sub-DPS",
+        "Self-Buffer"
+      ],
       "imgName": "lonely_survivor",
       "startDate": "2026-08-06T00:00:00.000Z",
       "endDate": "2026-08-12T23:50:00.000Z",
       "breakpoints": [
-        ["3","-1 SP"]
+        [
+          "3",
+          "-1 SP"
+        ]
       ],
       "pullPriority": "n",
       "pullReason": "It is rotational costume of Lathel, which does not deal a lot of damage. Nice to have, but not mandatory unless high-end rotations.",
-      "pros": ["Rotational Lathel Costume","Self-Buffer"],
-      "cons": ["Low Damage", "Mid AoE"],
+      "pros": [
+        "Rotational Lathel Costume",
+        "Self-Buffer"
+      ],
+      "cons": [
+        "Low Damage",
+        "Mid AoE"
+      ],
       "modes": {
         "gr": "Niche",
         "fh": "Niche",
